@@ -25,10 +25,11 @@ module.exports = {
           return res.status(401).json({ error: 'Senha inválida' });
         }
   
-        return res.json(usuario);
-      } catch (err) {
-        return res.status(500).json({ error: err.message });
-      }
+         // Redireciona para a página home passando o nome do usuário como parâmetro
+      return res.view('pages/homepage', { nome: usuario.nome });
+    } catch (err) {
+      return res.status(500).json({ error: err.message });
     }
-  };
+  }
+}
   
