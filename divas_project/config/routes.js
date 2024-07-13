@@ -22,7 +22,6 @@ module.exports.routes = {
   '/': { view: 'pages/login' },
   '/cadastro': { view: 'pages/cadastro' },
   '/login': { view: 'pages/login' },
-  //'/perfil': 'PerfilController.mostrarPerfil',
   '/perfil': { view: 'pages/perfil' },
 
   'POST /cadastro': 'UsuarioController.cadastro',
