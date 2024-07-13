@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
     <title>Perfil</title>
   </head>
   <body>
+    <img src="images/bgPerfil.svg" class="bgPerfil">
     <div class="dados-pessoais" action="/perfil" method="GET">
+
       <!-- foto de perfil -->
       <div class="profile-picture">
-        <% if (usuario.foto) { %>
-          <img id="profile-image" src="<%= usuario.foto %>">
-        <% } else { %>
-          <img src="/images/defaultProfile.png" alt="Default Profile Picture">
-        <% } %>
       </div>
 
       <div class="info-cadastro">
-        <h2><%= usuario.nome %></h2>
-        <ul>
-          <li>Idade: <%= usuario.idade %></li>
-          <li>Nível: <%= usuario.nivel %></li>
-          <li>Email: <%= usuario.email %></li>
-          <li>LinkedIn: <%= usuario.linkedin %></li>
-          <li>Telefone: <%= usuario.telefone %></li>
-        </ul>
+        <div class="foto">
+
+        </div>
+        <div class="bg-info-pessoal">
+          <h2>Nome</h2>
+          <ul>
+            <li>Idade: </li>
+            <li>Nível: </li>
+            <li>Email: </li>
+            <li>LinkedIn: </li>
+            <li>Telefone: </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="baixo">
+        <div class="oportunidades">
+          <h2>Oportunidades</h2>
+        </div>
+        <div class="info-geral">
+          <h2>Informações gerais</h2>
+        </div>
       </div>
     </div>
 
   </body>
+  <script>
+
+  </script>
 </html>
