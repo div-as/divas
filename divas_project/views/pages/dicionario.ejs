@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras para Você Conhecer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e6d1;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .column {
+            background-color: #c3d9f7;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: left;
+            margin: 0 10px;
+            box-sizing: border-box; 
+        }
+        .column h2 {
+            margin-top: 0;
+            background-color: #a3c3f7;
+            padding: 10px;
+            border-radius: 10px 10px 0 0; 
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 20px; 
+        }
+        .column ul {
+            list-style-type: disc;
+            padding: 0;
+        }
+        .column li {
+            margin: 10px 0;
+            color: #FFFF;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .columns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .column {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Palavras para você conhecer o significado</h1>
+        <div class="columns">
+            <div class="column">
+                <h2>Ferramentas</h2>
+                <ul>
+                    <li>Firewall</li>
+                    <li>API</li>
+                    <li>Git</li>
+                    <li>Framework</li>
+                    <li>VS Code</li>
+                    <li>Leet Code</li>
+                    <li>Biblioteca</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Áreas</h2>
+                <ul>
+                    <li>Full-stack</li>
+                    <li>Blockchain</li>
+                    <li>Big Data</li>
+                    <li>Backend</li>
+                    <li>Machine Learning</li>
+                    <li>Frontend</li>
+                    <li>DevOps</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Termos Gerais</h2>
+                <ul>
+                    <li>Algoritmo</li>
+                    <li>Código-fonte</li>
+                    <li>Depuração</li>
+                    <li>Compilador</li>
+                    <li>Protocolo</li>
+                    <li>Boa prática</li>
+                    <li>Banco de Dados</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a href="#">Saiba mais</a></p>
+        </div>
+    </div>
+</body>
+</html>

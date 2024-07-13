@@ -31,7 +31,8 @@ module.exports.routes = {
 
 
   // Outras rotas aqui...
-  '/homepage': {view: 'pages/homepage'}
+  '/homepage': {view: 'pages/homepage'},
+  '/dicionario': {view:'pages/dicionario'},
 };
 
 
