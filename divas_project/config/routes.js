@@ -33,6 +33,8 @@ module.exports.routes = {
   // Outras rotas aqui...
   '/homepage': {view: 'pages/homepage'},
   '/dicionario': {view:'pages/dicionario'},
+  '/firewall': {view: 'pages/firewall'},
+
 };
 
 
