@@ -8,8 +8,10 @@
  * https://sailsjs.com/docs/concepts/policies
  */
 
-module.exports.policies = {
-
+module.exports.policies = { 
+  'UsuarioController': {
+   '*': true, // Permite acesso a todos os métodos de UsuarioController sem restrições
+ }
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions, unless overridden.       *

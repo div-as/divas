@@ -19,7 +19,13 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/homepage' },
+ 'GET /cadastro': { view: 'pages/cadastro' },
+  'GET /login': { view: 'pages/login' },
+  'POST /cadastro': 'UsuarioController.cadastro',
+  'POST /login': 'UsuarioController.login',
+
+  // Outras rotas aqui...
+};
 
 
   /***************************************************************************
@@ -33,5 +39,3 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-
-};
