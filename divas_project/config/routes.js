@@ -25,6 +25,7 @@ module.exports.routes = {
   'POST /login': 'UsuarioController.login',
 
   // Outras rotas aqui...
+  '/homepage': {view: 'pages/homepage'}
 };
 
 
