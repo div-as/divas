@@ -7,6 +7,7 @@ body{
     margin-bottom: 5%;
     margin-left: 10%;
     margin-right: 10%;
+    font-family: nunito;
 }
 
 
@@ -16,40 +17,61 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 77%;
+}
+
+.boas-vindas h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .seu-progresso {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content : center;
     border-radius: 35px;
     background-color: #B1B6D3;
-    width:88%;
-    height: 140%;
+    width: 1207px;
+    height: 426px;
+    margin-top: 10px;
 }
 
 .seu-progresso h1 {
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 52px;
+    margin-bottom: 80px;
 }
 
 .progresso{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1207px;
+    height: 426px;
 }
 
 .circulo {
-    width: 9vh;
-    height: 9vh;
+    width: 123px;
+    height: 123px;
     border-radius: 50%;
     background-color: #D9D9D9;
-    margin: 12px;
+    margin: 1%;
 }
 
 .areas-atuacao {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+.areas-atuacao h1 {
+    margin-top:15px;
 }
 
 .cards-area {
@@ -62,6 +84,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     border-radius: 35px;
     background-color: #DCFAFF;
     width: 23%;
@@ -70,8 +94,14 @@ body{
 }
 
 .card h1 {
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
+}
+
+.card p {
+    margin: 15px;
+    font-family: nunito;
+    text-align: justify;
 }
 
 .card button {
@@ -79,4 +109,6 @@ body{
     background-color: #B1B6D3;
     height: 39px;
     width: 76.5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.2);
+    margin-bottom: 10px;
 }
