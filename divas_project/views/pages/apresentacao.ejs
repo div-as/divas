@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+
+    <title>Apresentação</title>
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #FCECCC;
+        }
+        .pagina {
+            position: relative;
+        }
+        .background-elipse {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .imagens {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        }
+
+        .imagem-wrapper {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         margin: -10px 0;
+        }
+
+        .imagem-wrapper img {
+        margin: 2px 0;
+        }
+
+        .apresenta {
+            text-align: center;
+            padding: 20px;
+        }
+        .apresenta img {
+            width: 150px;
+            margin: 10px;
+        }
+        .apresenta .textos {
+            max-width: 600px;
+            margin: auto;
+        }
+        .sobre {
+            background-color: #F8B65B;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .containers {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .containers div {
+            margin: 20px;
+            width: 250px;
+        }
+        .missão {
+            background-color: #F0F0F0;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .coment {
+            padding: 20px;
+            text-align: center;
+        }
+        .chat {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .chat .op1, .chat .op2 {
+            width: 45%;
+            margin: 10px;
+            text-align: left;
+        }
+        .chat .op1 img, .chat .op2 img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .contato {
+            background-color: #F8B65B;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .contato img {
+            width: 150px;
+            margin: 10px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        form label, form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        form button {
+            align-self: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="pagina">
+        <img src="./images/elipse.svg" alt="fundo_elipse" class="background-elipse"/>
+        <div class="apresenta">
+            <div class ="imagens">
+                <div class="imagem-wrapper">
+            <img src="./images/adalove.svg" alt="adalove" class="adalove"/>
+            <img src="./images/grace.svg" alt="grace" class="grace"/>
+                </div>
+            </div>
+            <div class="textos">
+                <h1>Transformando Carreiras. <br>
+                    Inspirando Mulheres. <br>
+                    Construindo Futuros.</h1>
+                <p>    
+                    Empoderando mulheres em seu processo de transição de carreira para que se reinventem profissionalmente e a conquistem um lugar de destaque na área de tecnologia. </p>
+            </div>
+        </div>
+
+        <div class="sobre">
+            <div class="containers">
+                <div class="explain1">
+                    <h2>Trilhas</h2>
+                    <p>Trilhas para as diferentes áreas da tecnologia com materiais de qualidade.</p>
+                </div>
+                <div class="explain2">
+                    <h2>Workshops</h2>
+                    <p>Workshops sobre as tecnologias emergentes do mercado com  parceiros gigantes em tech.</p>
+                </div>
+                <div class="explain3">
+                    <h2>Mentorias</h2>
+                    <p>Mentorias individualizadas para a sua trajetória com profissionais do mercado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="missão">
+            <img src="./images/mulheres.svg" alt="mulheres" class="mulheres"/>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1>Missão</h1>
+                        <p>Capacitar, desenvolver e apoiar mulheres em transição de carreira para a área de tecnologia por meio de uma comunidade engajada, workshops exclusivos com empresas tech parceiras e um programa de mentoria.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Visão</h1>
+                        <p>Acreditamos em um mundo onde a diversidade e a inclusão são a base para a inovação, e onde cada mulher, independentemente de sua idade ou trajetória, pode alcançar seu pleno potencial profissional.  Promovemos o empoderamento, a capacitação contínua e a colaboração, transformando vidas e inspirando novas gerações de líderes na tecnologia.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Valores</h1>
+                        <p>Nossos principais valores são o empoderamento e a inclusão de mulheres no ambiente tecnológico. Acreditamos na força e no potencial de cada mulher, fornecemos as ferramentas, conhecimentos e suporte necessários para que cada mulher se sinta capacitada a conquistar seus objetivos profissionais e pessoais. Além disso, valorizamos a diversidade e promovemos um ambiente onde todas as mulheres, independentemente de suas origens ou experiências, são bem-vindas e respeitadas, promovendo a equidade e a inclusão em todas as nossas atividades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coment">
+            <h1>O que as &lt;/div&gt;as dizem sobre nossa comunidade?</h1>
+            <div class="chat">
+                <div class="op1">
+                    <div class="margem">
+                        <img src="./images/persona1.png" alt="persona1" class="persona1"/>
+                    </div>
+                    <p>“O &lt;/div&gt;as foi um marco dentro da minha carreira. Após anos no mercado financeiro, consegui fazer minha transição para um big tech de dados com o apoio e mentorias do &lt;/div&gt;as! Sou grata por fazer parte de uma comunidade cheia de divas que guiarão o mercado tecnológico!”</p>
+                </div>
+                <div class="op2">
+                    <div class="margem">
+                        <img src="./images/persona2.png" alt="persona2" class="persona2"/>
+                    </div>
+                    <p>“Encontrar uma comunidade de mulheres em transição de carreira tão unida e engajada em prol do conhecimento facilitou a minha jornada em 100%. Decidi largar a veterinária para encarar o mundo dos códigos e fui abraçada com muitas oportunidades, mesmo em um contexto dificil sendo mãe solo”</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contato">
+            <img src="./images/Logo.svg" alt="Logo" class="Logo"/>
+            <h1>&lt;/div&gt;</h1>
+            <h1>Conquiste o Futuro Tech hoje</h1>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="mensagem">Escreva a mensagem aqui</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script> 
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+</script>
+</html>
