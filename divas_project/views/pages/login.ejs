@@ -20,6 +20,20 @@
             position: relative;
         }
 
+        .botão-login {
+            background-color: #D8ABC7;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            font-size: large;
+        }
+
         .background-image {
             position: absolute;
             top: 50%;
@@ -98,11 +112,11 @@
         <form id="loginForm" action="/login" method="POST">
         <input type="email" id="email" name="email" placeholder="e-mail" required>
         <input type="password" id="password" name="senha" placeholder="senha" required>
+        <input type="submit" class="botão-login" value="Entrar" >
     </form>
     </div>
     
     <div class="container-botoes">
-        <input type="submit" class="botão-login" value="Entrar" >
         <a href="/forgot-password" class="botão-esqueceusenha">Esqueceu a senha?</a>
         <a href="/cadastro" class="botão-criarconta">Cadastre-se</a>
     </div>
