@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+
+    <style> 
+        body.login {
+            background-color: #B1B6D3;
+            font-family: 'Nunito', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8; 
+        }
+
+        .container-login {
+            background-color: rgba(255, 255, 255, 0.719);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 10px;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .container-login h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .container-login input[type="email"],
+        .container-login input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .container-botoes {
+            text-align: center;
+            z-index: 1;
+            position: absolute;
+            margin-top: 52rem;
+        }
+
+        .container-botoes input[type="submit"] {
+            background-color: #D8ABC7;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            font-size: large;
+        }
+
+        .container-botoes a {
+            color: #333;
+            text-decoration: none;
+            display: block; 
+            margin-bottom: 15px; 
+        }
+
+        .container-botoes a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
-  <h1>Login</h1>
-  <form action="/login" method="POST">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br>
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" required><br>
-    <button type="submit">Login</button>
-  </form>
+<body class="login">
+    <img src="/divas_project/assets/images/Logo.svg" alt="logo" class="background-image"/>
+    <div class="container-login">
+        <h1>LOGIN</h1>
+        <form action="/login" method="POST">
+        <input type="email" id="email" name="email" placeholder="e-mail" required>
+        <input type="password" id="password" name="senha" placeholder="senha" required>
+      </form>
+    </div>
+    
+    <div class="container-botoes">
+        <input type="submit" class="botão-login" value="Entrar" onclick="login()">
+        <a href="/forgot-password" class="botão-esqueceusenha">Esqueceu a senha?</a>
+        <a href="/signup" class="botão-criarconta">Cadastre-se</a>
+    </div>
+
 </body>
 </html>
+
