@@ -1,10 +1,3 @@
-/**
- * Usuario.js
- *
- * @description :: A model definition represents a database table/collection.
- * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
- */
-
 const bcrypt = require('bcrypt');
 
 module.exports = {
@@ -22,6 +15,22 @@ module.exports = {
     senha: {
       type: 'string',
       required: true
+    },
+    linkedin: {
+      type: 'string',
+      allowNull: true // Permitir que seja nulo se não for fornecido
+    },
+    telefone: {
+      type: 'string',
+      allowNull: true // Permitir que seja nulo se não for fornecido
+    },
+    idade: {
+      type: 'number',
+      allowNull: true 
+    },
+    nivel: {
+      type: 'string',
+      allowNull: true 
     }
   },
 
@@ -40,5 +49,3 @@ module.exports = {
     return await bcrypt.compare(senha, hash);
   }
 };
-
-

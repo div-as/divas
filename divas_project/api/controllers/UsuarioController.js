@@ -1,15 +1,8 @@
-/**
- * UsuarioController
- *
- * @description :: Server-side actions for handling incoming requests.
- * @help        :: See https://sailsjs.com/docs/concepts/actions
- */
-
 module.exports = {
-    register: async function (req, res) {
+    cadastro: async function (req, res) {
       try {
         const usuario = await Usuario.create(req.body).fetch();
-        return res.status(201).json(usuario);
+        return res.redirect('/login'); // Redireciona para a página de login após o registro
       } catch (err) {
         return res.status(400).json({ error: err.message });
       }
@@ -32,7 +25,6 @@ module.exports = {
           return res.status(401).json({ error: 'Senha inválida' });
         }
   
-        // Aqui você pode adicionar lógica para gerar um token JWT, se necessário
         return res.json(usuario);
       } catch (err) {
         return res.status(500).json({ error: err.message });
