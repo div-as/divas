@@ -19,8 +19,11 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
- 'GET /cadastro': { view: 'pages/cadastro' },
-  'GET /login': { view: 'pages/login' },
+
+  '/cadastro': { view: 'pages/cadastro' },
+  '/': { view: 'pages/login' },
+  '/perfil': {view: 'pages/perfil'},
+
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
 
