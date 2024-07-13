@@ -95,14 +95,14 @@
     <img src="/divas_project/assets/images/Logo.svg" alt="logo" class="background-image"/>
     <div class="container-login">
         <h1>LOGIN</h1>
-        <form action="/login" method="POST">
+        <form id="loginForm" action="/login" method="POST">
         <input type="email" id="email" name="email" placeholder="e-mail" required>
         <input type="password" id="password" name="senha" placeholder="senha" required>
-      </form>
+        <input type="submit" class="botão-login" value="Entrar" >
+    </form>
     </div>
     
     <div class="container-botoes">
-        <input type="submit" class="botão-login" value="Entrar" onclick="login()">
         <a href="/forgot-password" class="botão-esqueceusenha">Esqueceu a senha?</a>
         <a href="/cadastro" class="botão-criarconta">Cadastre-se</a>
     </div>
