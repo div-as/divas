@@ -26,11 +26,15 @@ module.exports = {
     },
     idade: {
       type: 'number',
-      allowNull: true 
+      allowNull: true
     },
     nivel: {
       type: 'string',
-      allowNull: true 
+      allowNull: true
+    },
+    foto: {
+      type: 'string',
+      allowNull: true
     }
   },
 
