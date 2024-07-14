@@ -10,15 +10,6 @@
 
 module.exports.routes = {
 
-  /***************************************************************************
-  *                                                                          *
-  * Make the view located at `views/homepage.ejs` your home page.            *
-  *                                                                          *
-  * (Alternatively, remove this and add an `index.html` file in your         *
-  * `assets` directory)                                                      *
-  *                                                                          *
-  ***************************************************************************/
-
   '/': { view: 'pages/login', locals: { layout: false } },
   '/cadastro': { view: 'pages/cadastro', locals: { layout: false } },
   '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
