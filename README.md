@@ -33,7 +33,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;A plataforma oferece mentorias personalizadas com mentoras voluntárias que atuam na TIM, trilhas técnicas especializadas e workshops, com o objetivo de capacitar as participantes que vieram de outras áreas para as vagas na área de tecnologia. Além disso, cria um ambiente de comunidade unida, onde as trajetórias individuais se encontram, permitindo que, juntas, elas construam conexões significativas para superar os desafios da transição de carreira, alcançar metas e criar com sucesso uma nova carreira na área tech, transformando vidas e inspirando novas gerações de mulheres líderes na tecnologia.
 
-# <a name="c1"></a>2. Problema
+# <a name="c2"></a>2. Problema
 
 &nbsp;&nbsp;&nbsp;&nbsp;O problema específico que está sendo abordado é a sub-representação de mulheres, especialmente aquelas em transição de carreira mais avançadas em idade, em cargos de tecnologia e liderança, impedindo-as de conquistar vagas e oportunidade de trabalho na área tecnológica. Esta disparidade de gênero e de idade que o mercado enfrenta resulta em ambientes de trabalho menos diversos e inclusivos, criando barreiras significativas para mulheres que desejam mudar de carreira para a área de tecnologia e encontrar novas vagas e oportundades. Elas enfrentam desafios como a falta de mentoria e apoio, ambientes predominantemente masculinos, estereótipos de gênero e preconceitos implícitos, falta de pertencimento à uma comunidade que entenda suas dores, além de menor acesso a projetos desafiadores e visíveis. Além disso, a cultura organizacional frequentemente não apoia a diversidade de gênero e muito menos de idade, desencorajando essas mulheres a buscar ou permanecer em carreiras tecnológicas.
 
@@ -95,7 +95,7 @@
 - Organização de agenda com mentorias
 - Concorrência de outras iniciativas similares de inclusão de mulheres na tecnologia
 
-#<a name="c4"></a>4. `Diferenciais da Solução `</div>as`
+# <a name="c4"></a>4. Diferenciais da Solução `</div>as`
 
 &nbsp;&nbsp;&nbsp;&nbsp;A solução das `</div>as` se destaca pela criação de uma comunidade interativa e colaborativa, onde mulheres em transição para a tecnologia podem compartilhar experiências e se desenvolver juntas. O chat integrado na aplicação web facilita a conexão instantânea e a troca de conhecimentos entre as participantes, promovendo um ambiente inclusivo e de apoio mútuo. Além disso, a plataforma oferece mentorias personalizadas com profissionais da TIM e trilhas técnicas especializadas, preparando as participantes, especialmente aquelas com carreiras consolidadas em outras áreas, mas que, no momento, estão em transição para a área tecnológica, para se destacarem e encontrarem oportunidades no mercado de trabalho tech. 
 &nbsp;&nbsp;&nbsp;&nbsp;Ao focar na inclusão de mulheres mais velhas e na quebra de estereótipos etários e de gênero no setor, a solução não só combate a desigualdade, mas também promove um ambiente de trabalho ainda mais diversificado e inovador, impulsionando a mudança positiva na indústria tecnológica.
@@ -110,15 +110,29 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;Portanto, através de sua plataforma web, a solução `</div>as` facilita o acesso das mulheres a mentorias especializadas, trilhas técnicas adaptadas às necessidades do mercado e workshops que desenvolvem habilidades essenciais para o sucesso na área tecnológica. Ao promover um ambiente que valoriza a experiência e o potencial das participantes, a solução não apenas capacita as mulheres para competirem às vagas em igualdade de condições, mas também as prepara para assumirem papéis de liderança dentro das empresas de tecnologia, contribuindo para uma maior diversidade e inovação no setor.
 
-#<a name="c5"></a>5. Tecnologias
+# <a name="c5"></a>5. Tecnologias
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para o desenvolvimento da aplicação web, utilizamos várias tecnologias e ferramentas essenciais. Para o frontend, empregamos HTML5, CSS3 e JavaScript, que são fundamentais para a criação da interface do usuário (UI). No backend, optamos pelo framework Sails.js, que facilita a organização do código seguindo o padrão MVC (Model-View-Controller). O banco de dados teve seu gerenciamento realizado pelo software DBeaver. Todo o sistema foi hospedado em um servidor no Render, garantindo a disponibilidade e segurança dos dados. Além disso, utilizamos Node.js como ambiente de execução para o servidor web, assegurando a eficiência e escalabilidade da aplicação. 
 &nbsp;&nbsp;&nbsp;&nbsp;Essas tecnologias trabalham em conjunto para suportar a arquitetura MVC, onde HTML5 e CSS3 atuam na camada de visualização (View), Sails.js no controle e modelo (Controller/Model), DBeaver como interface para o banco de dados (Model), e Render como servidor (Server).
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;A documentação detalhada do processo de desenvolvimento da aplicação web pode ser conferida por meio do WAD (Web Application Document) pode ser encontrado aqui: 
+&nbsp;&nbsp;&nbsp;&nbsp;A documentação detalhada do processo de desenvolvimento da aplicação web pode ser conferida por meio do WAD (Web Application Document) pode ser encontrado aqui: (Divas > Documents > WAD.md)
 
-### Configuração para desenvolvimento e execução do código
+
+# <a name="c6"></a>6. Conclusões e Próximos Passos
+
+&nbsp;&nbsp;&nbsp;&nbsp; A solução `</div>as` oferece à TIM e ao mercado de tecnologia uma oportunidade única de promover a inclusão de mulheres na área tecnológica, tanto em cargos profissionais quanto de liderança. Ao proporcionar mentorias personalizadas, trilhas técnicas especializadas e um ambiente de comunidade online, capacitamos as mulheres em transição de carreira, preparando-as para desafios do mercado atual e para a consolidação de uma carreira brilhante. A adoção da nossa solução pela empresa TIM irá fortalecer sua estratégia de diversidade e inclusão, aproveitando a expertise das mentoras da empresa e promovendo um ambiente de trabalho mais diversificado e inovador. 
+&nbsp;&nbsp;&nbsp;&nbsp;Os próximos passos envolvem a expansão e aprimoramento da plataforma para atender às crescentes demandas do mercado. Planejamos fortalecer parcerias estratégicas com outras empresas e organizações que compartilham nosso compromisso com a inclusão de mulheres na tecnologia. Além disso, estamos focados em ampliar nossa base de usuárias, oferecendo mais recursos educacionais e oportunidades de desenvolvimento profissional. Continuaremos a inovar e adaptar nossa solução para enfrentar os desafios futuros e contribuir significativamente para a transformação do setor tecnológico em um ambiente mais inclusivo e equitativo.
+&nbsp;&nbsp;&nbsp;&nbsp;Para o futuro, espera-se que a plataforma `</div>as` consiga alcançar metas estipuladas pela equipe, como: <br>
+
+1. Contribuir para uma redução de 50% nos estereótipos de gênero e de faixa etária associados às mulheres na indústria tecnológica do Brasil dentro de 2 anos;
+2. Aumentar em 30% a taxa de colocação das participantes em posições de liderança dentro das empresas parceiras ao longo de 2 anos.
+3. Fazer com que 70% das `</div>as` da plataforma consigam uma vaga em tecnologia em menos de 3 meses após a conclusão de todas as trilhas e participação nas mentorias e workshops.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Portanto, com um compromisso firme com a diversidade e inclusão, a solução `</div>as` está pronta para fazer a diferença necessária no setor tecnológico. Uma plataforma que não apenas capacita e prepara mulheres em transição de carreira, mas também desafia os paradigmas de gênero e idade, impulsionando uma mudança positiva no futuro de todas as mulheres. Ao fortalecer parcerias estratégicas e ampliar a base de usuárias, é construído um futuro mais inclusivo e equitativo para todas. Conquiste o Futuro Tech, Hoje, com `</div>as`, onde cada mulher é inspirada a transformar sua carreira e liderar na tecnologia.
+
+
+## Configuração para desenvolvimento e execução do código
 
 &nbsp;&nbsp;&nbsp;&nbsp;Neste tópico, encontram-se todas as instruções necessárias para a instalação de todos os programas, bibliotecas e ferramentas imprescindíveis para a configuração do ambiente de desenvolvimento.
 
@@ -137,19 +151,8 @@ sails lift
 4. Agora você pode acessar a aplicação através do link http://localhost:1337/
 5. O servidor está online.
 
-#<a name="c6"></a>6. Conclusões e Próximos Passos
 
-&nbsp;&nbsp;&nbsp;&nbsp; A solução `</div>as` oferece à TIM e ao mercado de tecnologia uma oportunidade única de promover a inclusão de mulheres na área tecnológica, tanto em cargos profissionais quanto de liderança. Ao proporcionar mentorias personalizadas, trilhas técnicas especializadas e um ambiente de comunidade online, capacitamos as mulheres em transição de carreira, preparando-as para desafios do mercado atual e para a consolidação de uma carreira brilhante. A adoção da nossa solução pela empresa TIM irá fortalecer sua estratégia de diversidade e inclusão, aproveitando a expertise das mentoras da empresa e promovendo um ambiente de trabalho mais diversificado e inovador. 
-&nbsp;&nbsp;&nbsp;&nbsp;Os próximos passos envolvem a expansão e aprimoramento da plataforma para atender às crescentes demandas do mercado. Planejamos fortalecer parcerias estratégicas com outras empresas e organizações que compartilham nosso compromisso com a inclusão de mulheres na tecnologia. Além disso, estamos focados em ampliar nossa base de usuárias, oferecendo mais recursos educacionais e oportunidades de desenvolvimento profissional. Continuaremos a inovar e adaptar nossa solução para enfrentar os desafios futuros e contribuir significativamente para a transformação do setor tecnológico em um ambiente mais inclusivo e equitativo.
-&nbsp;&nbsp;&nbsp;&nbsp;Para o futuro, espera-se que a plataforma `</div>as` consiga alcançar metas estipuladas pela equipe, como: <br>
-
-1. Contribuir para uma redução de 50% nos estereótipos de gênero e de faixa etária associados às mulheres na indústria tecnológica do Brasil dentro de 2 anos;
-2. Aumentar em 30% a taxa de colocação das participantes em posições de liderança dentro das empresas parceiras ao longo de 2 anos.
-3. Fazer com que 70% das `</div>as` da plataforma consigam uma vaga em tecnologia em menos de 3 meses após a conclusão de todas as trilhas e participação nas mentorias e workshops.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Portanto, com um compromisso firme com a diversidade e inclusão, a solução `</div>as` está pronta para fazer a diferença necessária no setor tecnológico. Uma plataforma que não apenas capacita e prepara mulheres em transição de carreira, mas também desafia os paradigmas de gênero e idade, impulsionando uma mudança positiva no futuro de todas as mulheres. Ao fortalecer parcerias estratégicas e ampliar a base de usuárias, é construído um futuro mais inclusivo e equitativo para todas. Conquiste o Futuro Tech, Hoje, com `</div>as`, onde cada mulher é inspirada a transformar sua carreira e liderar na tecnologia.
-
-#<a name="c7"></a>7. Referências
+# <a name="c7"></a>7. Referências
 
 1. Rock Content. Aplicação Web. Disponível em: <https://rockcontent.com/br/talent-blog/aplicacao-web/>. Acesso em: 14 jul. 2024.
 

@@ -22,6 +22,7 @@
 [2.1.2. Views](#c2.1.2)<br>
 [2.1.3. Controllers](#c2.1.3)<br>
 [2.1.4. Helpers](#c2.1.4)<br>
+[2.1.5. Endpoints](#c2.1.5)<br>
 [2.2. Guia de estilos](#c2.2)<br>
 [2.3 Protótipo de alta fidelidade](#2.3)<br>
 [3. Desenvolvimento da Aplicação Web & Ferramentas](#3)<br>
@@ -67,6 +68,15 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;Helper é um método que pode ser utilizado na view para renderizar algum elemento HTML ou um comportamento desejável nessa view (DevMedia, 2017). O helper utilizado na aplicação web foi: Upload. Sua principal função é realziar o upload da foto de perfil da pessoa.
 
+### <a name="c2.1.5"></a> 2.1.5. Endpoints
+
+&nbsp;&nbsp;&nbsp;&nbsp;Os endpoints são pontos de extremidade de comunicação em uma aplicação ou sistema, geralmente referenciados em contextos de desenvolvimento de API (Interface de Programação de Aplicativos). Eles representam URLs específicas às quais solicitações podem ser enviadas para acessar recursos ou executar operações. Os endpoints são importantes porque facilitam a interação entre diferentes sistemas, permitindo que aplicativos se comuniquem uns com os outros de forma padronizada e consistente.
+
+<div align="center">
+<sub><a name="f"></a> Endpoints </sub>
+<img src="assets/Endpoint.jpg">
+<sup>Fonte: Material produzido pelas autoras (2024)</sup>
+</div>
 
 ## <a name="c2.2"></a> 2.2. Guia de estilos 
 
