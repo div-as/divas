@@ -63,7 +63,7 @@ p {
   align-items: center;
 }
 
-.card {
+.card-perfil {
   display: flex;
   flex-direction: column;
   border-radius: 2vh;
@@ -80,6 +80,7 @@ p {
   background-color: #06254C;
   color: #B1B6D3;
   cursor: pointer;
+  transition: .2s;
 }
 
 .foto {
