@@ -11,7 +11,22 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #F2E2CE;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-sig {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vh;
+            height: 100%;
+            z-index: -1;
+            object-fit: inherit;
+            padding-left: 110vh;
+            
         }
 
         .container {
@@ -24,24 +39,33 @@
             width: 100%;
         }
 
+        .container p {
+            color: white;
+        }
+
         button {
-            width: 344px;
-            height: 64px;
+            width: 10vh;
+            height: 5vh;
             border-radius: 20px;
-            background-color: rgb(216, 171, 199);
-            border: none;
-            color: #fff;
-            font-size: 16px;
+            background-color: #e088bf;
+            border: 2px solid #f777c6;
+            color: #000000;
+            font-size: 20px;
             cursor: pointer;
-            margin-top: 20px;
+            font-weight: 500;
+            margin-left: 1vh;
+            margin-right: 1vh;
+            transform: translateY(110px);
         }
 
         button:hover {
-            background-color: rgb(196, 151, 179);
+            background-color: rgb(241, 90, 183);
         }
+
     </style>
 </head>
 <body>
+    <img src="./images/deco_sig.svg" alt="fundo_sig" class="background-sig" />
     <div class="container">
         <h1>Firewall</h1>
         <p>Um firewall é uma rede de segurança que monitora e controla o tráfego de rede de entrada e saída com base em regras de segurança predeterminadas.</p>
