@@ -58,11 +58,11 @@
 
 ### <a name="c2.1.2"></a> 2.1.2. Views
 
-&nbsp;&nbsp;&nbsp;&nbsp;As Views são responsáveis por renderizar a interface do usuário e exibir os dados processados pelo Controller. Elas incluem diferentes telas e componentes da interface. São elas: Apresentação, cadastro, dicionário, firewall, homepage, login, perfil e trilhas.
+&nbsp;&nbsp;&nbsp;&nbsp;As Views são responsáveis por renderizar a interface do usuário e exibir os dados processados pelo Controller. Elas incluem diferentes telas e componentes da interface. São elas: Apresentação, cadastro, dicionário, firewall, homepage, login, perfil, chat e trilhas.
 
 ### <a name="c2.1.3"></a> 2.1.3. Controllers
 
-&nbsp;&nbsp;&nbsp;&nbsp;O controller corresponde à camada que é responsável por responder as ações do usuário e age como intermediário entre o Model e a View. Na aplicação web `</div>as`, verifica-se os seguintes controllers: Homepage, Perfil e Usuário.
+&nbsp;&nbsp;&nbsp;&nbsp;O controller corresponde à camada que é responsável por responder as ações do usuário e age como intermediário entre o Model e a View. Na aplicação web `</div>as`, verifica-se os seguintes controllers: Homepage, contato, Perfil e Usuário.
 
 ### <a name="c2.1.4"></a> 2.1.4. Helpers
 
@@ -74,7 +74,9 @@
 
 <div align="center">
 <sub><a name="f"></a> Endpoints </sub>
+  <br>
 <img src="/assets/Endpoint.jpg">
+<br>
 <sup>Fonte: Material produzido pelas autoras (2024)</sup>
 </div>
 
