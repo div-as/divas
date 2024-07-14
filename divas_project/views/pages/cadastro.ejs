@@ -85,8 +85,43 @@
             <input type="tel" id="telefone" name="telefone" placeholder="Telefone *" required>
             <input type="email" id="email" name="email" placeholder="E-mail *" required>
             <input type="password" id="senha" name="senha" placeholder="Senha *" required>
-            <input type="submit" class="cadastro-botão" value="Cadastrar">
+            <input type="submit" class="cadastro-botão" value="Cadastrar" onclick="cadastrar()">
         </form>
     </div>
 </body>
+<script>
+  function cadastrar() {
+    const cadastro = {
+      nome: document.getElementById('nome').value,
+      idade: document.getElementById('idade').value,
+      nivel: document.getElementById('nivel').value,
+      linkedin: document.getElementById('linkedin').value,
+      telefone: document.getElementById('telefone').value,
+      email: document.getElementById('email').value,
+      senha: document.getElementById('senha').value,
+    };
+
+    fetch('/cadastro', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(cadastro)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.error) {
+        alert('An error occurred: ' + data.error);
+        location.reload();
+      } else {
+        alert('You signed up!');
+        location.reload();
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred during sign up.');
+    });
+  };
+</script>
 </html>

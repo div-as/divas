@@ -21,18 +21,16 @@ module.exports.routes = {
 
   '/': { view: 'pages/login', locals: { layout: false } },
   '/cadastro': { view: 'pages/cadastro', locals: { layout: false } },
-  '/login': { view: 'pages/login', locals: { layout: false } },
   '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
-  '/perfil': { view: 'pages/perfil', locals: { layout: true } },
-  '/homepage': {view: 'pages/homepage', locals: { layout: true }},
-  '/apresentacao': { view: 'pages/apresentacao', locals: {layout:true}},
 
+  '/apresentacao': { view: 'pages/apresentacao', locals: {layout:true}},
+  '/homepage': 'HomepageController.mostrarHomepage',
+  '/perfil': 'PerfilController.mostrarPerfil',
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
 
 
   // Outras rotas aqui...
-  '/homepage': {view: 'pages/homepage'},
   '/dicionario': {view:'pages/dicionario'},
   '/firewall': {view: 'pages/firewall'},
 

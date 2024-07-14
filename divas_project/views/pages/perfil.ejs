@@ -20,13 +20,13 @@
             <img src="/images/fotoPadrao.sgv">
         </div>
         <div class="bg-info-pessoal">
-          <h2>Nome: </h2>
+          <h2>Nome: <%= usuario.nome %></h2>
           <ul>
-            <li>Idade: </li>
-            <li>Nível: </li>
-            <li>Email: </li>
-            <li>LinkedIn: </li>
-            <li>Telefone: </li>
+            <li>Idade: <%= usuario.idade %></li>
+            <li>Nível: <%= usuario.nivel %></li>
+            <li>Email: <%= usuario.email %></li>
+            <li>LinkedIn: <%= usuario.linkedin %></li>
+            <li>Telefone: <%= usuario.telefone %></li>
           </ul>
         </div>
       </div>
@@ -37,10 +37,10 @@
         </div>
         <div class="info-geral">
           <h2>Informações gerais</h2>
-          <div class="card-perfil" onclick=" window.location.href = 'https://www.youtube.com/live/dKrsLmtGjS8'">
+          <div class="card-perfil" onclick=" window.location.href = 'https://www.youtube.com/live/dKrsLmtGjS8'" target="_blank">
             <p>Entre no Discord!</p>
           </div>
-          <div class="card-perfil">
+          <div class="card-perfil" onclick="location.href = '/dicionario'">
             <p>Dicionário tech</p>
           </div>
         </div>
