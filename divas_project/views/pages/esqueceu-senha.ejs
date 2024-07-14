@@ -66,8 +66,7 @@
             color: #333;
         }
 
-        .container-login input[type="email"],
-        .container-login input[type="password"] {
+        .container-login input{
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -112,33 +111,80 @@
 <body class="login">
     <img src="./images/Logo.svg" alt="logo" class="background-image"/>
     <div class="container-login">
-        <h1>LOGIN</h1>
-        <form id="loginForm" action="/login" method="POST">
-        <input type="email" id="email" name="email" placeholder="e-mail" required>
-        <input type="password" id="password" name="senha" placeholder="senha" required>
-        <input type="submit" class="botão-login" value="Entrar" onclick="login()">
-    </form>
+      <h1>Atualizar senha</h1>
+
+          <form id="verificarForm">
+            <input type="nome" id="nome" name="nome" placeholder="Nome" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <input type="submit" class="botão-login" value="Verificar" onclick="verificar()">
+          </form>
+
+          <form id="atualizarForm" style="display: none;">
+            <input type="novaSenha" id="novaSenha" name="novaSenha" placeholder="Nova senha" required>
+            <input type="confirmacaoSenha" id="confirmacaoSenha" name="confirmacaoSenha" placeholder="Confirme a senha" required>
+            <input type="submit" class="botão-login" value="Confirmar" onclick="confirmar()">
+          </form>
     </div>
 
-    <div class="container-botoes">
-        <a href="/verificar" class="botão-esqueceusenha">Esqueceu a senha?</a>
-        <a href="/cadastro" class="botão-criarconta">Cadastre-se</a>
-    </div>
+
 
 </body>
 <script>
-  function login() {
-    const login = {
+  function verificar() {
+    event.preventDefault();
+
+    const verificacao = {
+      nome: document.getElementById('nome').value,
       email: document.getElementById('email').value,
-      senha: document.getElementById('senha').value,
     };
-    console.log(login)
-    fetch('/login', {
+
+    fetch('/verificar', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(login)
+      body: JSON.stringify(verificacao)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.error) {
+        alert('An error occurred: ' + data.error);
+        location.reload();
+      } else {
+        alert('Verificação sucedida!');
+        document.getElementById('verificarForm').style.display = 'none';
+        document.getElementById('atualizarForm').style.display = 'block';
+        location.reload();
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Um erro ocorreu na verificação.');
+    });
+  };
+
+
+  function confirmar() {
+
+    const novaSenha = document.getElementById('novaSenha').value
+    const confirmacaoSenha = document.getElementById('confirmacaoSenha').value
+
+    if (novaSenha !== confirmacaoSenha) {
+      alert('As senhas não são iguais');
+      return;
+    }
+
+    const senhaAtualizada = {
+      email: document.getElementById('email').value,
+      novaSenha: confirmacaoSenha
+    };
+
+    fetch('/senhaAtualizada', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(senhaAtualizada)
     })
     .then(response => response.json())
     .then(data => {

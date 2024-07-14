@@ -17,15 +17,21 @@ module.exports.routes = {
   '/apresentacao': { view: 'pages/apresentacao', locals: {layout:true}},
   '/homepage': 'HomepageController.mostrarHomepage',
   '/perfil': 'PerfilController.mostrarPerfil',
+  '/dicionario': { view: 'pages/dicionario' },
+  '/firewall': { view: 'pages/firewall' },
+  '/chat': {view: 'pages/chat'},
+  '/verificar': {view: 'pages/esqueceu-senha', locals: { layout: false }},
+  '/senhaAtualizada': {view: 'pages/esqueceu-senha', locals: { layout: false }},
+
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
   'POST /submitForm': 'ContatoController.create',
+  'POST/ verificar': 'EsqueceuSenhaController.verificarConta',
+  'POST/ senhaAtualizada': 'EsqueceuSenhaController.atualizarSenha',
 
 
   // Outras rotas aqui...
-  '/dicionario': { view: 'pages/dicionario' },
-  '/firewall': { view: 'pages/firewall' },
-  '/chat': {view: 'pages/chat'}
+
 };
 
   /***************************************************************************
