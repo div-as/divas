@@ -25,6 +25,7 @@ module.exports.routes = {
   '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
   '/perfil': { view: 'pages/perfil', locals: { layout: true } },
   '/homepage': {view: 'pages/homepage', locals: { layout: true }},
+  '/apresentacao': { view: 'pages/apresentacao', locals: {layout:true}},
 
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
