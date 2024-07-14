@@ -19,21 +19,20 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/login' },
-  '/cadastro': { view: 'pages/cadastro' },
-  '/login': { view: 'pages/login' },
-  '/trilhas': { view: 'pages/trilhas' },
-  //'/perfil': 'PerfilController.mostrarPerfil',
-  '/perfil': { view: 'pages/perfil' },
-
+  '/': { view: 'pages/login', locals: { layout: false } },
+  '/cadastro': { view: 'pages/cadastro', locals: { layout: false } },
+  '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
+  '/apresentacao': { view: 'pages/apresentacao', locals: { layout: true } },
+  '/homepage': 'HomepageController.mostrarHomepage',
+  '/perfil': 'PerfilController.mostrarPerfil',
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
-
+  'POST /submitForm': 'ContatoController.create',
 
   // Outras rotas aqui...
-  '/homepage': {view: 'pages/homepage'}
+  '/dicionario': { view: 'pages/dicionario' },
+  '/firewall': { view: 'pages/firewall' },
 };
-
 
   /***************************************************************************
   *                                                                          *
@@ -45,4 +44,3 @@ module.exports.routes = {
   * not match any of those, it is matched against static assets.             *
   *                                                                          *
   ***************************************************************************/
-

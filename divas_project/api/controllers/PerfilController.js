@@ -1,13 +1,11 @@
 module.exports = {
   mostrarPerfil: async function (req, res) {
     try {
-      const usuario = await Usuario.findOne({ id: req.params.usuarioId });
-      sails.log(usuario);
+      const usuario = await Usuario.findOne({ id: req.session.usuarioId });
+      sails.log(usuario)
       if (!usuario) {
-        return res.redirect('/login');
+        return res.redirect('/');
       }
-
-
       return res.view('pages/perfil', { usuario });
 
     } catch (error) {
