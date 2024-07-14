@@ -86,6 +86,7 @@
 <div align="center">
 <sub><a name="f3"></a>Figura 3 - Diagrama dos prototipos - parte 1</sub>
 <img src="/assets/diagramapro1.png">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -101,6 +102,7 @@
 
 <div align="center">
 <sub><a name="f5"></a>Figura 5 - Apresentação</sub>
+<br>
 <img src="/assets/apresentacaoSide.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
@@ -110,6 +112,7 @@
 
 <div align="center">
 <sub><a name="f6"></a>Figura 6 - Login</sub>
+<br>
 <img src="/assets/LoginDivas.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
