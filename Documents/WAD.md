@@ -204,12 +204,12 @@
 
 # <a name="c3"></a>3. Ferramentas para desenvolvimento da Aplicação Web
 &nbsp;&nbsp;&nbsp;&nbsp;Para desenvolver o projeto, utilizou-se diversas ferramentas e softwares auxiliares. No código, as linguagens HTML, CSS e JavaScript foram usadas para a criação do frontend; já o backend foi construido com base em SQL. Além disso, o framework Sails.js ajudou a construção do código no modelo MVC, o qual já foi explicado anteriormente. Quanto ao banco de dados, ele foi armazenado em um servidor no Render. Para visualizar esses dados utilizou-se o software DBeaver. Além do Node.js como runtime environment e o HTML5 e CSS3 para a construção da UI. Essas tecnologias se relacionam à arquitetura MVC da seguinte forma:
-
-HTML5 e CSS3: View
-Sails.js: Controller/model
-Dbeaver: Model
-Render: Server
-Node.js: runtime environment
+<br>
+HTML5 e CSS3: View<br>
+Sails.js: Controller/model<br>
+Dbeaver: Model<br>
+Render: Server<br>
+Node.js: runtime environment<br>
 
 # Referências 
 
