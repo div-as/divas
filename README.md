@@ -124,8 +124,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Os próximos passos envolvem a expansão e aprimoramento da plataforma para atender às crescentes demandas do mercado. Planejamos fortalecer parcerias estratégicas com outras empresas e organizações que compartilham nosso compromisso com a inclusão de mulheres na tecnologia. Além disso, estamos focados em ampliar nossa base de usuárias, oferecendo mais recursos educacionais e oportunidades de desenvolvimento profissional. Continuaremos a inovar e adaptar nossa solução para enfrentar os desafios futuros e contribuir significativamente para a transformação do setor tecnológico em um ambiente mais inclusivo e equitativo.
 &nbsp;&nbsp;&nbsp;&nbsp;Para o futuro, espera-se que a plataforma `</div>as` consiga alcançar metas estipuladas pela equipe, como: <br>
 
-1. Contribuir para uma redução de 50% nos estereótipos de gênero e de faixa etária associados às mulheres na indústria tecnológica do Brasil dentro de 2 anos;
-2. Aumentar em 30% a taxa de colocação das participantes em posições de liderança dentro das empresas parceiras ao longo de 2 anos.
+1. Contribuir no aumento em pelo menos 40% a presença de mulheres em vagas na indústria tecnológica do Brasil dentro de 2 anos;
+2. Aumentar em 30% a taxa de colocação das participantes em posições de liderança dentro das empresas parceiras ao longo de 2 anos;
 3. Fazer com que 70% das `</div>as` da plataforma consigam uma vaga em tecnologia em menos de 3 meses após a conclusão de todas as trilhas e participação nas mentorias e workshops.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Portanto, com um compromisso firme com a diversidade e inclusão, a solução `</div>as` está pronta para fazer a diferença necessária no setor tecnológico. Uma plataforma que não apenas capacita e prepara mulheres em transição de carreira, mas também desafia os paradigmas de gênero e idade, impulsionando uma mudança positiva no futuro de todas as mulheres. Ao fortalecer parcerias estratégicas e ampliar a base de usuárias, é construído um futuro mais inclusivo e equitativo para todas. Conquiste o Futuro Tech, Hoje, com `</div>as`, onde cada mulher é inspirada a transformar sua carreira e liderar na tecnologia.<br>
