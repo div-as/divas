@@ -76,6 +76,7 @@
 <sub><a name="f2"></a>Figura 2 - Guia de estilos </sub>
 <br>
 <img src="/assets/guiadeestilo.png" width="80%">
+<br>
 <sup>Fonte: Material produzido pelas autoras (2024)</sup>
 </div>
 
