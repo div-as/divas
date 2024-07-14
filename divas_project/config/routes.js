@@ -13,10 +13,12 @@ module.exports.routes = {
   '/': { view: 'pages/login', locals: { layout: false } },
   '/cadastro': { view: 'pages/cadastro', locals: { layout: false } },
   '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
-  '/inspira': { view: 'pages/inspira', locals: {layout:true}},
+
   '/apresentacao': { view: 'pages/apresentacao', locals: {layout:true}},
   '/homepage': 'HomepageController.mostrarHomepage',
   '/perfil': 'PerfilController.mostrarPerfil',
+  '/admin': { view: 'pages/admin', locals: { layout: false } },
+
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
   'POST /submitForm': 'ContatoController.create',
@@ -25,7 +27,8 @@ module.exports.routes = {
   // Outras rotas aqui...
   '/dicionario': { view: 'pages/dicionario' },
   '/firewall': { view: 'pages/firewall' },
-  '/chat': {view: 'pages/chat'}
+  '/chat': {view: 'pages/chat'},
+  '/inspira': { view: 'pages/inspira', locals: {layout:true}},
 };
 
   /***************************************************************************

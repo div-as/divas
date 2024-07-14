@@ -35,7 +35,7 @@ module.exports = {
     foto: {
       type: 'string',
       allowNull: true
-    }
+    },
   },
 
   customToJSON: function() {
