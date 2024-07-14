@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <title>Apresentação</title>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #FCECCC;
+            width: 100%;
+        }
+
+
+        .background-elipse {
+            position: absolute;
+            top: 0;
+            width: 70%;
+            z-index: -1;
+        }
+
+        .imagem-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(-350px);
+        }
+
+        .imagem-wrapper img {
+            margin-bottom: 45px;
+            padding: 0;
+        }
+
+        .adalove {
+            transform: translateX(-100px) translateY(90px);
+        }
+
+        .grace {
+            transform: translateX(20px);
+        }
+
+        .apresenta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            flex-direction: row-reverse;
+            
+        }
+
+        .apresenta .textos {
+            max-width: 600px;
+            margin-right: 20px;
+            text-align: left;
+            margin-left: 260px;
+        }
+
+        .apresenta h1 {
+            margin-bottom: 100px;
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .apresenta p {
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 32px;
+        }
+
+        .sobre {
+            background-color: #F8B65B;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .containers {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 55px;
+        }
+
+        .containers div {
+            margin: 20px;
+            width: 250px;
+            background-color: #B1B6D3;
+            height: 300px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+        .missão {
+            background-color: #F0F0F0;
+            text-align: center;
+            position: static;
+        }
+
+        .missão .carousel {
+            position: absolute;
+            width: 60%;
+            height: 50%;
+            background-color: #B1B6D3;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            margin-left: 20%;
+            text-align: center;
+            margin-top: 10%;
+            border: 1px solid black;
+        }
+
+        .missão .carousel-inner {
+            padding-bottom: 30px;
+            background-color: #FCECCC;
+            border-radius: 20px;
+            width: 90%;
+            align-self: center;
+            margin-left: 5%;
+            height: 90%;
+            margin-top: 2%;
+            border: 1px solid black;
+        }
+
+        .carousel-item {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10%;
+        }
+
+        .coment h1{
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 5%;
+            padding-left:25% ;
+        }
+
+        .chat {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .chat .op1 {
+            width: calc(50% - 15px);
+            margin: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .chat .op2 {
+            width: calc(50% - 15px);
+            margin: 10px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+        }
+
+        .chat .op1 img,
+        .chat .op2 img {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .chat .op1 p,
+        .chat .op2 p {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: left;
+            margin-top: 5%;
+            font-size: 24px;
+        }
+
+        .contato {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        background-color: #F8B65B;
+        text-align: center;
+        margin-top: 50px; 
+    }
+
+    .nome {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .nome img {
+        width: 50%; 
+    }
+
+    .nome h1 {
+        font-weight: 900;
+        transform: translateY(-30px);
+    }
+
+    .mensagem {
+        text-align: left;
+        max-width: 600px; 
+        margin-left: 10%;
+    }
+
+    .form-container {
+        margin-top: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-container {
+        position: relative;
+        width: 100%;
+        margin-bottom: 15px; 
+    }
+
+    .input-container input {
+        width: 100%;
+        padding: 10px; 
+        border: none;
+        border-radius: 8px; 
+        background-color: #FFF; 
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+        font-size: 16px; 
+        transition: box-shadow 0.3s ease, background-color 0.3s ease; 
+    }
+
+    .input-container input:focus {
+        outline: none;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    }
+
+    .input-container label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #888; 
+        pointer-events: none; 
+        transition: top 0.3s ease, left 0.3s ease, color 0.3s ease; 
+    }
+
+    .input-container input:focus + label,
+    .input-container input:not(:placeholder-shown) + label {
+        left: 10px;
+        font-size: 20px; 
+        color: #333; 
+    }
+
+    form textarea {
+        width: 100%;
+        padding: 10px; 
+        border: none;
+        border-radius: 8px; 
+        background-color: #FFF; 
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        font-size: 16px; 
+        resize: vertical; 
+        min-height: 150px; 
+        transition: box-shadow 0.3s ease, background-color 0.3s ease; 
+    }
+
+    form textarea:focus {
+        outline: none;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    }
+
+    form button {
+        align-self: center;
+        width: 50%; 
+        background-color: #B1B6D3; 
+        color: #FFF; 
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+        padding: 10px; 
+        border: none;
+        border-radius: 8px; 
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+        font-size: 16px; 
+    }
+
+    form button:hover {
+        background-color: #8C91AC; 
+    }
+
+    .mensagem h1 {
+        font-size: 40px;
+        font-weight: 900;
+    }
+    
+        .explain1 h2 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .explain1 p {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .mulheres {
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .carousel-item h1 {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .carousel-item p {
+            font-size: 24;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .persona1,
+        .persona2 {
+            border: 15px solid #B1B6D3;
+            border-radius: 20px;
+        }
+
+        .redes{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-left: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagina">
+        <img src="./images/elipse.svg" alt="fundo_elipse" class="background-elipse" />
+        <div class="apresenta">
+            <div class="imagem-wrapper">
+                <img src="./images/adalove.svg" alt="adalove" class="adalove" />
+                <img src="./images/grace.svg" alt="grace" class="grace" />
+            </div>
+            <div class="textos">
+                <h1>Transformando Carreiras. <br>
+                    Inspirando Mulheres. <br>
+                    Construindo Futuros.</h1>
+                <p>
+                    Empoderando mulheres em seu processo de transição de carreira para que se reinventem
+                    profissionalmente e a conquistem um lugar de destaque na área de tecnologia. </p>
+            </div>
+        </div>
+
+        <div class="sobre">
+            <div class="containers">
+                <div class="explain1">
+                    <h2>Trilhas</h2>
+                    <p>Trilhas para as diferentes áreas da tecnologia com materiais de qualidade.</p>
+                </div>
+                <div class="explain1">
+                    <h2>Workshops</h2>
+                    <p>Workshops sobre as tecnologias emergentes do mercado com parceiros gigantes em tech.</p>
+                </div>
+                <div class="explain1">
+                    <h2>Mentorias</h2>
+                    <p>Mentorias individualizadas para a sua trajetória com profissionais do mercado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="missão">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1>Missão</h1>
+                        <p>Capacitar, desenvolver e apoiar mulheres em transição de carreira para a área de tecnologia
+                            por meio de uma comunidade engajada, workshops exclusivos com empresas tech parceiras e um
+                            programa de mentoria.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Visão</h1>
+                        <p>Acreditamos em um mundo onde a diversidade e a inclusão são a base para a inovação, e onde
+                            cada mulher, independentemente de sua idade ou trajetória, pode alcançar seu pleno potencial
+                            profissional. Promovemos o empoderamento, a capacitação contínua e a colaboração,
+                            transformando vidas e inspirando novas gerações de líderes na tecnologia.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Valores</h1>
+                        <p>Nossos principais valores são o empoderamento e a inclusão de mulheres no ambiente
+                            tecnológico. Acreditamos na força e no potencial de cada mulher, fornecemos as ferramentas,
+                            conhecimentos e suporte necessários para que cada mulher se sinta capacitada a conquistar
+                            seus objetivos profissionais e pessoais. Além disso, valorizamos a diversidade e promovemos
+                            um ambiente onde todas as mulheres, independentemente de suas origens ou experiências, são
+                            bem-vindas e respeitadas, promovendo a equidade e a inclusão em todas as nossas atividades.
+                        </p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <img src="./images/mulheres.svg" alt="mulheres" class="mulheres" />
+        </div>
+
+
+        <div class="coment">
+            <h1>O que as &lt;/div&gt;as dizem sobre nossa comunidade?</h1>
+            <div class="chat">
+                <div class="op1">
+                    <div class="margem">
+                        <img src="./images/persona1.png" alt="persona1" class="persona1" />
+                    </div>
+                    <p>“O &lt;/div&gt;as foi um marco dentro da minha carreira. Após anos no mercado financeiro,
+                        consegui fazer minha <strong>transição para um big tech de dados</strong> com o apoio e mentorias do
+                        &lt;/div&gt;as! Sou grata por fazer parte de uma comunidade cheia de divas que guiarão o mercado
+                        tecnológico!”</p>
+                </div>
+                <div class="op2">
+                    <div class="margem">
+                        <img src="./images/persona2.png" alt="persona2" class="persona2" />
+                    </div>
+                    <p>“Encontrar uma comunidade de mulheres em transição de carreira tão unida e engajada em prol do
+                        conhecimento facilitou a minha jornada em 100%. Decidi <strong>largar a veterinária para encarar o mundo
+                        dos códigos e fui abraçada com muitas oportunidades</strong>, mesmo em um contexto dificil sendo mãe
+                        solo”</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contato">
+            <div class="nome">
+                <img src="./images/Logo.svg" alt="Logo" class="Logo" />
+                <h1>&lt;/div&gt;as</h1>
+            </div>
+            <div class="mensagem">
+                <h1>Conquiste o Futuro Tech hoje</h1>
+                <div class="form-container">
+                    <form action="/submitForm" method="post">
+                        <div class="input-container">
+                            <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+                            <label for="nome"></label>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" id="email" name="email" placeholder="E-mail:" required>
+                            <label for="email"></label>
+                        </div>
+                        <div class="input-container">
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva a mensagem aqui" rows="5" required></textarea>
+                            <label for="mensagem"></label>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/seu_perfil_instagram" target="_blank">
+                    <img src="./images/insta.svg" alt="instagram" class="instagram" />
+                </a>
+                <a href="https://www.linkedin.com/in/seu_perfil_linkedin" target="_blank">
+                    <img src="./images/link.svg" alt="linkedin" class="linkedin" />
+                </a>
+                <a href="https://twitter.com/seu_perfil_twitter" target="_blank">
+                    <img src="./images/twi.svg" alt="twitter" class="twitter" />
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Inicialize o Carousel -->
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+    <script>
+        document.querySelector('form').addEventListener('submit', async function (event) {
+          event.preventDefault();
+          
+          const formData = new FormData(this);
+          const response = await fetch('/submitForm', {
+            method: 'POST',
+            body: formData
+          });
+      
+          if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+            this.reset();
+          } else {
+            alert('Erro ao enviar a mensagem.');
+          }
+        });
+      </script>
+
+</body>
+
+</html>

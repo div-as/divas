@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Nunito, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f6f1;
+        }
+
+        .cadastro-container {
+            background-color: #fff;
+            padding: 80px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .cadastro-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .cadastro-container input,
+        .cadastro-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .cadastro-botão {
+            background-color: #f48fb1;
+            color: #06254C;
+            padding: 8px 20px; /* Diminui o padding para tornar o botão menor */
+            border-radius: 20px; /* Ajusta o border-radius para manter a aparência arredondada */
+            cursor: pointer;
+            font-size: 16px; /* Diminui o tamanho da fonte */
+            border: 1px solid #F5C481;
+            font-weight: bold;
+        }
+
+        .cadastro-botão:hover {
+            background-color: #ec407a;
+            transition: .2s;
+        }
+
+        .background-cads {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./images/Fundo.svg" alt="fundo" class="background-cads"/>
+    <div class="cadastro-container">
+        <h1>CADASTRO</h1>
+        <form action="/cadastro" method="post">
+            <input type="text" id="nome" name="nome" placeholder="Nome completo *" required>
+            <input type="number" id="idade" name="idade" placeholder="Idade *" required>
+            <select id="nivel" name="nivel" required>
+                <option value="" disabled selected hidden>Nível de conhecimento *</option>
+                <option value="Júnior">Júnior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Sênior">Sênior</option>
+            </select>
+            <input type="text" id="linkedin" name="linkedin" placeholder="Linkedin *" required>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone *" required>
+            <input type="email" id="email" name="email" placeholder="E-mail *" required>
+            <input type="password" id="senha" name="senha" placeholder="Senha *" required>
+            <input type="submit" class="cadastro-botão" value="Cadastrar" onclick="cadastrar()">
+        </form>
+    </div>
+</body>
+<script>
+  function cadastrar() {
+    const cadastro = {
+      nome: document.getElementById('nome').value,
+      idade: document.getElementById('idade').value,
+      nivel: document.getElementById('nivel').value,
+      linkedin: document.getElementById('linkedin').value,
+      telefone: document.getElementById('telefone').value,
+      email: document.getElementById('email').value,
+      senha: document.getElementById('senha').value,
+    };
+
+    fetch('/cadastro', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(cadastro)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.error) {
+        alert('An error occurred: ' + data.error);
+        location.reload();
+      } else {
+        alert('You signed up!');
+        location.reload();
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred during sign up.');
+    });
+  };
+</script>
+</html>

@@ -1,0 +1,153 @@
+body{
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FCECCC;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 15vw;
+  font-family: nunito;
+}
+
+
+
+.boas-vindas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.boas-vindas h1 {
+  width: 50%;
+  font-size: 9vh;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.boas-vindas img {
+  width: 30%;
+  height: 30%;
+}
+
+.seu-progresso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content : center;
+  border-radius: 3vh;
+  background-color: #B1B6D3;
+  width: 100%;
+  height: 40vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.seu-progresso h1 {
+  margin-top: 4vh;
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 2vh;
+}
+
+.progresso{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 426px;
+}
+
+.circulo {
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  margin: 1%;
+}
+
+.areas-atuacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/bg-home.svg);
+  background-size: cover;
+  border-radius: 2vw;
+  padding: 3vh;
+  margin-bottom: 10vh;
+}
+/*
+.bg-home {
+  bottom: auto;
+  z-index: -1;
+  position: absolute;
+  background-size: 100vh 90vw;
+}
+*/
+.areas-atuacao h1 {
+  margin-top:2vh;
+}
+
+.cards-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-top, .card-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-radius: 3vh;
+  background-color: #DCFAFF;
+  height: 45vh;
+  width: 100%;
+  margin: 1vw;
+  padding: 2vh;
+
+}
+.card:hover {
+  background-color: #06254C;
+  color: #B1B6D3;
+  transition: .2s;
+}
+.card h1 {
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.card p {
+  margin-top: 0;
+  font-size: 1.7vh;
+  font-family: nunito;
+}
+
+.card button {
+  border-radius: 20px;
+  font-size: 2vh;
+  background-color: #B1B6D3;
+  height: 39px;
+  width: 76.5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.2);
+  margin-bottom: 10px;
+}
+
+.card button:hover {
+  font-size: 2vh;
+  background-color: #7b85bb;
+  cursor: pointer;
+  transition: .2s;
+}
+

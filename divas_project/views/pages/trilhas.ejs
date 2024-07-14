@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
+    <title>Cursos</title>
+    <style>
+        body {
+          font-family: 'Nunito', sans-serif;
+          background-color: #FCECCC;
+          display: flex;
+          align-items: center;
+        }
+
+        .container {
+            padding: 20px;
+            width: 80vw;
+            margin-top: 5vh;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #06254C;
+            font-weight: 1000;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #06254C;
+            margin-bottom: 30px;
+        }
+
+        .timeline {
+            background-color: #B1B6D3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 6px 8px 10px 4px rgba(0, 0, 0, 0.2);
+            position: relative;
+            opacity: 0.93;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 25px;
+            width: 2px;
+            height: calc(100% - 120px);
+            background-color: #333;
+            z-index: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .timeline-marker {
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .timeline-content {
+            flex-grow: 1;
+            text-decoration: underline;
+            color: #06254C;
+        }
+
+        .timeline-item.read .timeline-marker {
+            background-color: #4CAF50;
+        }
+
+        .timeline-item.read .timeline::before {
+            background-color: #4CAF50;
+        }
+
+        .cursos,
+        .canais {
+            padding: 40px;
+            border-radius: 15px;
+            width: 100%;
+            box-shadow: 6px 8px 10px 4px rgba(0, 0, 0, 0.2);
+            height: 200px;
+            margin-bottom: 50px;
+            opacity: 0.93;
+        }
+
+        .cursos {
+            background-color: #73BDD8;
+        }
+
+        .canais {
+            background-color: #F8B65B;
+        }
+
+        .curso-item,
+        .canal-item {
+            background-color: #FFF;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+
+        .curso-item a,
+        .canal-item a {
+            color: #06254C;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .curso-item a:hover,
+        .canal-item a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        .areas {
+            display: flex;
+            gap: 55px;
+        }
+
+        button {
+            background-color: #886FBF;
+            color: #06254C;
+            border: none;
+            padding: 10px 20px;
+            font-size: 24px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #764FBF;
+        }
+
+        .fundo_cursos {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 105%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+}
+    </style>
+</head>
+<body>
+    <img src="./images/fundo_cursos.svg" alt="fundo_cursos" class="fundo_cursos"/>
+    <div class="container">
+        <h1>Trilha Básica</h1>
+        <div class="timeline">
+            <h2>Assuntos</h2>
+            <div class="timeline-item" id="item1">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <a href="https://ebaconline.com.br/blog/o-que-e-github" target="_blank">O que é o GitHub?</a>
+                </div>
+            </div>
+            <div class="timeline-item" id="item2">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <a href="https://medium.com/@habbema/malhando-o-git-9175ab29ef6a" target="_blank">Funções básicas do Git</a>
+                </div>
+            </div>
+            <div class="timeline-item" id="item3">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <a href="https://github.com/orgs/community/discussions/50797" target="_blank">Terminal X Desktop</a>
+                </div>
+            </div>
+            <div class="timeline-item" id="item4">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <a href="https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=164240702375&hsa_ad=703829337057&hsa_src=g&hsa_tgt=dsa-2276348409543&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwy8i0BhAkEiwAdFaeGCoHdoqsJqWZITTDzUv0101jhpje788AjJhAE1SKgMhChFp1La3BgRoC0IYQAvD_BwE" target="_blank">Git flow</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="areas">
+            <div class="cursos">
+                <h2>Cursos recomendados</h2>
+                <div class="curso-item">
+                    <a href="https://www.udemy.com/course/git-e-github-para-iniciantes/" target="_blank">Curso gratuito: Udemy</a>
+                </div>
+                <div class="curso-item">
+                    <a href="https://www.udemy.com/course/curso-completo-de-git/?couponCode=LETSLEARNNOWPP" target="_blank">Curso pago: Udemy</a>
+                </div>
+            </div>
+
+            <div class="canais">
+                <h2>Canais recomendados</h2>
+                <div class="canal-item">
+                    <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA" target="_blank">Canal: Curso em Video</a>
+                </div>
+                <div class="canal-item">
+                    <a href="https://www.youtube.com/playlist?list=PLpaKFn4Q4GMOhOuffvi7VagNib0P325AV" target="_blank">Canal: Pietro Martins de Oliveira </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button onclick="alert('Trilha finalizada!')">Finalizar</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('read');
+            });
+        });
+    </script>
+
+</body>
+</html>

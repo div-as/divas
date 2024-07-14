@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="../assets/styles/perfil.css">
+    <title>Perfil</title>
+  </head>
+  <body>
+    <img src="images/bgPerfil.svg" class="bgPerfil">
+    <div class="dados-pessoais" action="/perfil" method="GET">
+
+      <!-- foto de perfil -->
+      <div class="profile-picture">
+      </div>
+
+      <div class="info-cadastro">
+        <div class="foto">
+            <img src="images/comp.sgv">
+        </div>
+        <div class="bg-info-pessoal">
+          <h2>Nome: <%= usuario.nome %></h2>
+          <ul>
+            <li>Idade: <%= usuario.idade %></li>
+            <li>Nível: <%= usuario.nivel %></li>
+            <li>Email: <%= usuario.email %></li>
+            <li>LinkedIn: <%= usuario.linkedin %></li>
+            <li>Telefone: <%= usuario.telefone %></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="baixo">
+        <div class="oportunidades">
+          <h2>Oportunidades</h2>
+        </div>
+        <div class="info-geral">
+          <h2>Informações gerais</h2>
+          <div class="card-perfil" onclick=" window.location.href = '/chat'" target="_blank">
+            <p>Entre no chat da comunidade!</p>
+          </div>
+          <div class="card-perfil" onclick="location.href = '/dicionario'">
+            <p>Dicionário tech</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script>
+  </script>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <title>Inspiração</title>
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #F5E8D0;
+        }
+
+        .inspirar {
+            text-align: center;
+            width: 80vw;
+        }
+        .bgPerfil {
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          top:0;
+          width: 60%;
+        }
+        /*
+        .bgBottom {
+          position: absolute;
+          z-index: -1;
+          bottom: 0;
+        }
+        */
+        .inspirar h1 {
+            color: #6E327B;
+            font-weight: 900;
+            font-size: 7vh;
+            margin: 0;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            margin: 2vh 0;
+            border-radius: 10px;
+        }
+
+        .intro .img {
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+
+        .intro img {
+            width: 200px;
+            height: 30vh;
+            border: 30px solid #73BDD8;
+            border-radius: 20px;
+        }
+
+        .simone, .cris {
+          object-fit: cover;
+          border-radius: 5%;
+        }
+
+        .desc {
+            height: 30vh;
+            background-color: #B1B6D3;
+            border-radius: 20px;
+            color: #06254C;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .desc > h1{
+            margin-bottom: 3vh;
+            text-align: left;
+            color: #06254C;
+            padding-left: 25px;
+            font-size: 5vh;
+        }
+
+        .desc p {
+            color: #06254C;
+            text-align: left;
+            padding-left: 20px;
+            margin: 4px;
+        }
+
+        .apresentacao {
+            background-color: #B1B6D3;
+            padding: 10px;
+            border-radius: 20px;
+            color: #06254C;
+            margin-bottom: 10vh;
+            text-align: left;
+        }
+
+        .mulheres-importantes {
+            display: flex;
+            gap: 2vw;
+
+        }
+
+        .mulheres-importantes h1 {
+            color: #06254C;
+        }
+
+        .mulheres-importantes .mulher1,
+        .mulheres-importantes .mulher2,
+        .mulheres-importantes .mulher3 {
+            display: flex;
+            align-items: center;
+            margin: 2vw 0;
+            border-radius: 10px;
+            flex-direction: column;
+            object-fit: cover;
+
+        }
+
+
+
+        .mulheres-importantes img {
+            border-radius: 20px;
+            width: 100%;
+            height: 500px;
+            margin-right: 20px;
+            background-clip: padding-box;
+          box-shadow: inset 0 0 30px #73BDD8;
+        }
+
+        .sobre {
+            background-color: #B1B6D3;
+            border-radius: 20px;
+            width: 100%;
+            height: 40vh;
+            padding-top: 2vh;
+        }
+
+        .sobre h2 {
+            color: #6E327B;
+            margin: 0;
+            text-align: center;
+        }
+
+        .sobre p {
+            margin: 5px 0;
+            padding-left:20px;
+            padding-right: 20px;
+            text-align: left;
+        }
+
+        img {
+          border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+  <img src="images/bgPerfil.svg" class="bgPerfil">
+    <div class="inspirar">
+        <h1>Inspire-se em mulheres incríveis!</h1>
+        <div class="intro">
+            <div class="img">
+                <img src="./images/simone.jpg" alt="simone" class="simone" />
+            </div>
+            <div class="desc">
+                <h1 class="name">Simone Alves</h1>
+                <p>Doutora em Administração e Engenharia Química, com especializações em Marketing, P&D de Produtos
+                    Químicos e Inovação em Turismo</p>
+                <p><b>Cargo:</b> Professora no IFRJ desde 2004; Coordenadora Geral de Prospecção, Parcerias e Empreendedorismo
+                    na Agência de Inovação</p>
+                <p><b>Contribuição:</b> Atuação como mentora e avaliadora em hackathons e programas de
+                    inovação/empreendedorismo (Ela Empodera, Conecta Startup, InovAtiva Brasil, InovaCPS, Nexus Circle,
+                    entre outros). Experiência de 15 anos como executiva nas áreas comercial e de marketing em empresas
+                    privadas.</p>
+            </div>
+        </div>
+        <div class="apresentacao">
+            <p>Sou doutora em administração e engenharia química, com mestrado na área e especializações em
+                Marketing, P&D de Produtos Químicos e Inovação em Turismo. Desde 2004, sou professora no IFRJ e, nos
+                últimos 5 anos, atuei como Coordenadora Geral de Prospecção, Parcerias e Empreendedorismo na Agência
+                de Inovação. Além da minha carreira acadêmica, tenho sido mentora e avaliadora em diversos
+                hackathons e programas de inovação e empreendedorismo. Anteriormente, acumulei 15 anos de
+                experiência como executiva nas áreas comercial e de marketing em empresas privadas.</p>
+        </div>
+
+        <div class="intro">
+            <div class="img">
+                <img src="./images/cris.jpg" alt="cris" class="cris" />
+            </div>
+            <div class="desc">
+                <h1 class="name">Cristiane Costa</h1>
+                <p>Doutora em Administração e Engenharia Química, com especializações em Marketing, P&D de Produtos
+                    Químicos e Inovação em Turismo</p>
+                <p><b>Cargo:</b> CTO e co-fundadora da Gupy</p>
+                <p><b>Contribuição:</b> Cristiane Costa é amplamente reconhecida como a fundadora da Gupy, uma das principais
+                    plataformas de recrutamento com inteligência artificial no Brasil. Com sua visão inovadora e
+                    liderança exemplar, Cristiane tem sido fundamental para impulsionar a transformação digital no setor
+                    de RH. Sob sua direção, a Gupy tem promovido processos seletivos mais eficientes, transparentes e
+                    inclusivos.</p>
+            </div>
+        </div>
+        <div class="apresentacao">
+            <p>Sou Cristiane Costa, fundadora da Gupy. Através da Gupy, estamos transformando o recrutamento com
+                inteligência artificial, tornando-o mais eficiente e inclusivo. Minha paixão é criar soluções inovadoras
+                que impactem positivamente o mercado de trabalho.</p>
+        </div>
+
+        <h1>Mulheres modernas notáveis</h1>
+        <div class="mulheres-importantes">
+            <div class="mulher1">
+                <img src="./images/kizzy.jpg" alt="mulher1" class="mulher1" />
+                <div class="sobre">
+                    <h2>Kizzy Terra</h2>
+                    <p> Cientista de Dados e co-criadora do canal Programação Dinâmica no YouTube. Bacharel em
+                        Engenharia de Computação pelo Instituto Militar de Engenharia (IME). Mestre em Matemática Aplicada pela
+                        FGV-RJ. e doutoranda no TIDD(PUC-SP). Além disso, trabalhou como analista de dados de utilidade pública na
+                        Fundação Getulio Vargas e Instituto de Pesquisa Econômica Aplicada, e foi cientista de dados
+                        sênior na Cyberlabs. </p>
+                </div>
+            </div>
+            <div class="mulher2">
+                <img src="./images/clau.jpg" alt="mulher2" class="mulher2" />
+                <div class="sobre">
+                    <h2>Claudia Meira</h2>
+                    <p>Claudia Meira, formada em Tecnologia da Informação com pós-graduação em Engenharia de Software e
+                        Gestão de Negócios, tem uma trajetória profissional marcante em grandes organizações como Itaú
+                        Unibanco, Avon e, atualmente, Unilever, onde atua como CIO LatAm & Brazil. Claudia acredita
+                        firmemente na tecnologia como uma aliada indispensável para transformar o mundo, os negócios e
+                        as pessoas, um princípio que tem guiado sua carreira desde o início.</p>
+                </div>
+            </div>
+            <div class="mulher3">
+                <img src="./images/leka.jpg" alt="mulher3" class="mulher3" />
+                <div class="sobre">
+                    <h2>Leka Hattori</h2>
+                    <p>Leka Hattori, 49 anos, começou sua jornada como estudante de intercâmbio na Califórnia. Depois,
+                        se tornou uma chef internacional de sucesso em Londres. Ao voltar ao Brasil, destacou-se no
+                        cenário corporativo, liderando iniciativas inovadoras. Apaixonada pelo espaço, participou de
+                        hackathons da NASA e missões analógicas de astronauta, mostrando sua versatilidade e
+                        determinação.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
