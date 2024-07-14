@@ -120,6 +120,7 @@
 <div align="center">
 <sub><a name="f7"></a>Figura 7 - Cadastro</sub>
 <img src="/assets/CadastroDivas.png">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -128,6 +129,7 @@
 <div align="center">
 <sub><a name="f8"></a>Figura 8 - Homepage</sub>
 <img src="/assets/HomeSide.png">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -136,6 +138,7 @@
 <div align="center">
 <sub><a name="f9"></a>Figura 9 - Homepage</sub>
 <img src="/assets/CursoSide.png">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -143,7 +146,8 @@
 
 <div align="center">
 <sub><a name="f10"></a>Figura 10 - Perfil</sub>
-<img src="/assets/PerfilSide.png">
+<img src="/assets/PerfilSide.png" width="80%">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -151,13 +155,15 @@
 
 <div align="center">
 <sub><a name="f11"></a>Figura 11 - Dicionário tech</sub>
-<img src="/assets/DicioSide1.png">
+<img src="/assets/DicioSide1.png" width="80%">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
 <sub><a name="f12"></a>Figura 12 - Dicionário tech</sub>
-<img src="/assets/DicioSide2.png">
+<img src="/assets/DicioSide2.png" width="80%">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -166,6 +172,7 @@
 <div align="center">
 <sub><a name="f13"></a>Figura 13 - Tela de Inspirações</sub>
 <img src="/assets/inspiSide.png">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -173,7 +180,8 @@
 
 <div align="center">
 <sub><a name="f14"></a>Figura 14 - Tela de Administradora</sub>
-<img src="/assets/AdminSide.png">
+<img src="/assets/AdminSide.png" width="80%">
+<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
