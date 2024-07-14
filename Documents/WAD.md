@@ -122,6 +122,7 @@
 
 <div align="center">
 <sub><a name="f7"></a>Figura 7 - Cadastro</sub>
+<br>
 <img src="/assets/CadastroDivas.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
