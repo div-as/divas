@@ -27,7 +27,7 @@ module.exports.routes = {
   // Outras rotas aqui...
   '/dicionario': { view: 'pages/dicionario' },
   '/firewall': { view: 'pages/firewall' },
-  '/chat': {view: 'pages/chat'}
+  '/chat': {view: 'pages/chat'},
   '/inspira': { view: 'pages/inspira', locals: {layout:true}},
 };
 
