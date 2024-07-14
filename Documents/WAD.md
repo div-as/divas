@@ -74,7 +74,7 @@
 
 <div align="center">
 <sub><a name="f2"></a>Figura 2 - Guia de estilos </sub>
-<img src="/assets/guiadeestilo.png" width="100%">
+<img src="/assets/guiadeestilo.png" width="80%">
 <sup>Fonte: Material produzido pelas autoras (2024)</sup>
 </div>
 
@@ -85,14 +85,15 @@
 
 <div align="center">
 <sub><a name="f3"></a>Figura 3 - Diagrama dos prototipos - parte 1</sub>
-<img src="/assets/diagramapro1.png">
+<img src="/assets/diagramapro1.png" width="80%">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
 <sub><a name="f4"></a>Figura 4 - Diagrama dos prototipos - parte 2</sub>
-<img src="/assets/diagramapro2.png">
+<img src="/assets/diagramapro2.png" width="80%">
+<br>
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -124,6 +125,7 @@
 <div align="center">
 <sub><a name="f7"></a>Figura 7 - Cadastro</sub>
 <br>
+<br>
 <img src="/assets/CadastroDivas.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
@@ -133,7 +135,7 @@
 
 <div align="center">
 <sub><a name="f8"></a>Figura 8 - Homepage</sub>
-<img src="/assets/HomeSide.png">
+<img src="/assets/homeSide.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -142,6 +144,7 @@
 
 <div align="center">
 <sub><a name="f9"></a>Figura 9 - Homepage</sub>
+<br>
 <img src="/assets/CursoSide.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
@@ -151,7 +154,8 @@
 
 <div align="center">
 <sub><a name="f10"></a>Figura 10 - Perfil</sub>
-<img src="/assets/PerfilSide.png" width="80%">
+<br>
+<img src="/assets/PerfilSide.png" width="60%">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -160,14 +164,16 @@
 
 <div align="center">
 <sub><a name="f11"></a>Figura 11 - Dicionário tech</sub>
-<img src="/assets/DicioSide1.png" width="80%">
+<br>
+<img src="/assets/DicioSide1.png" width="60%">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
 <sub><a name="f12"></a>Figura 12 - Dicionário tech</sub>
-<img src="/assets/DicioSide2.png" width="80%">
+<br>
+<img src="/assets/DicioSide2.png" width="60%">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -185,7 +191,8 @@
 
 <div align="center">
 <sub><a name="f14"></a>Figura 14 - Tela de Administradora</sub>
-<img src="/assets/AdminSide.png" width="80%">
+<br>
+<img src="/assets/AdminSide.png" width="60%">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
