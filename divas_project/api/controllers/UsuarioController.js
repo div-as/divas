@@ -31,5 +31,26 @@ module.exports = {
     } catch (err) {
       return res.status(500).json({ error: err.message });
     }
-  }
+  },
+
+  upload: async function (req, res) {
+    try {
+      const url = await sails.helpers.upload(req, 'profile_photo');
+      const userId = req.session.userId;
+      if (!userId) {
+        return res.status(401).json({ error: 'User not authenticated' });
+      }
+
+      const updatedUser = await User.updateOne({ id: userId }).set({ photo: url });
+      req.session.user.photo = url;
+
+      return res.view('pages/profile', {
+        success: true,
+        message: 'File uploaded successfully!',
+        url: url
+      });
+    } catch (err) {
+      return res.serverError({ error: 'An unexpected error occurred' });
+    }
+  },
 }

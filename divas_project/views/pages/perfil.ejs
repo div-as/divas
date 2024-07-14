@@ -17,8 +17,18 @@
 
       <div class="info-cadastro">
         <div class="foto">
-            <img src="images/comp.sgv">
+          <% if (usuario.foto) { %>
+            <img id="foto-perfil" src="<%= usuario.foto %>" alt="Profile Picture">
+          <% } else { %>
+            <img class="foto-perfil" src="./images/perfil.png">
+          <% } %>
+
+          <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="profile_photo" style="display:none;" onchange="submitForm()">
+            <button class="btn-upload" onclick="document.getElementById('file-input').click()">Upload foto</button>
+          </form>
         </div>
+
         <div class="bg-info-pessoal">
           <h2>Nome: <%= usuario.nome %></h2>
           <ul>
@@ -49,6 +59,33 @@
 
   </body>
   <script>
+    function submitForm() {
+      const form = document.getElementById('upload-form');
+      const formData = new FormData(form);
+
+      fetch('/api/v1/user/upload', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        if (data) {
+          alert('Upload completo!');
+          const profileImage = document.getElementById('profile-image');
+          profileImage.src = data.url;
+          profileImage.style.display = 'block';
+          location.reload();
+        } else {
+          alert('Upload failed!');
+          location.reload(); 
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred during upload.'); // Alert user if there's an error
+      });
+    }
   </script>
 
 </html>

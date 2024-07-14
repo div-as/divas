@@ -18,6 +18,7 @@ module.exports.routes = {
   'POST /login': 'UsuarioController.login',
   'POST /submitForm': 'ContatoController.create',
   'POST /esqueceu-senha': 'EsqueceuSenhaController.atualizarSenha',
+  'POST /upload': 'UsuarioController.upload',
 
 
 

@@ -86,5 +86,28 @@ p {
 .foto {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 2vw;
+}
+
+.btn-upload {
+  border: none;
+  border-radius: 2vh;
+  font-size: 2vh;
+  padding: .7vh;
+  background-color: #DCFAFF;
+  color: #06254C;
+  margin-top: 2vh;
+}
+
+.btn-upload:hover {
+  color: #DCFAFF;
+  background-color: #06254C;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.foto-perfil {
+  height: 180px;
 }
