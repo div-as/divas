@@ -35,7 +35,13 @@ module.exports = {
     foto: {
       type: 'string',
       allowNull: true
-    }
+    },
+    oportunidades: {
+      model: 'oportunidades',
+      columnName: 'oportunidades_id',
+      required: false,
+      type: 'number'
+    },
   },
 
   customToJSON: function() {
