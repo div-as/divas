@@ -74,6 +74,7 @@
 
 <div align="center">
 <sub><a name="f2"></a>Figura 2 - Guia de estilos </sub>
+<br>
 <img src="/assets/guiadeestilo.png" width="80%">
 <sup>Fonte: Material produzido pelas autoras (2024)</sup>
 </div>
@@ -134,6 +135,7 @@
 
 <div align="center">
 <sub><a name="f8"></a>Figura 8 - Homepage</sub>
+<br>
 <img src="/assets/homeSide.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
@@ -181,6 +183,7 @@
 
 <div align="center">
 <sub><a name="f13"></a>Figura 13 - Tela de Inspirações</sub>
+<br>
 <img src="/assets/inspiSide.png">
 <br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
