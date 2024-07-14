@@ -27,7 +27,7 @@ module.exports = {
       }
 
       req.session.usuarioId = usuario.id;
-      return res.redirect('/homepage');
+      return res.redirect('/apresentacao');
     } catch (err) {
       return res.status(500).json({ error: err.message });
     }
