@@ -74,7 +74,7 @@
 
 <div align="center">
 <sub><a name="f"></a> Endpoints </sub>
-<img src="assets/Endpoint.jpg">
+<img src="/assets/Endpoint.jpg">
 <sup>Fonte: Material produzido pelas autoras (2024)</sup>
 </div>
 

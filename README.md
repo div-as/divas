@@ -61,8 +61,8 @@
 
 ## Análise SWOT
 
-&nbsp;&nbsp;&nbsp;&nbsp; Além dessa ferramenta, uma análise swot foi desenvolvida para identificar e avaliar os pontos fortes (Strengths), fraquezas (Weaknesses), oportunidades (Opportunities) e ameaças (Threats) do `</div>as`. Serve para ajudar na compreensão das capacidades internas e desafios externos, permitindo a formulação de estratégias mais eficazes. Ao identificar essas quatro áreas, pode-se aproveitar seus pontos fortes, mitigar fraquezas, explorar oportunidades e se preparar para ameaças, facilitando a tomada de decisões informadas e o planejamento estratégico.
-&nbsp;&nbsp;&nbsp;&nbsp A seguinte análise SWOT foi desenvolvida pensando na aplicação web `</div>as`:
+&nbsp;&nbsp;&nbsp;&nbsp; Além dessa ferramenta, uma análise swot foi desenvolvida para identificar e avaliar os pontos fortes (Strengths), fraquezas (Weaknesses), oportunidades (Opportunities) e ameaças (Threats) do `</div>as`. Serve para ajudar na compreensão das capacidades internas e desafios externos, permitindo a formulação de estratégias mais eficazes. Ao identificar essas quatro áreas, pode-se aproveitar seus pontos fortes, mitigar fraquezas, explorar oportunidades e se preparar para ameaças, facilitando a tomada de decisões informadas e o planejamento estratégico.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; A seguinte análise SWOT foi desenvolvida pensando na aplicação web `</div>as`:
 
 ### Forças
 
@@ -97,7 +97,7 @@
 
 # <a name="c4"></a>4. Diferenciais da Solução `</div>as`
 
-&nbsp;&nbsp;&nbsp;&nbsp;A solução das `</div>as` se destaca pela criação de uma comunidade interativa e colaborativa, onde mulheres em transição para a tecnologia podem compartilhar experiências e se desenvolver juntas. O chat integrado na aplicação web facilita a conexão instantânea e a troca de conhecimentos entre as participantes, promovendo um ambiente inclusivo e de apoio mútuo. Além disso, a plataforma oferece mentorias personalizadas com profissionais da TIM e trilhas técnicas especializadas, preparando as participantes, especialmente aquelas com carreiras consolidadas em outras áreas, mas que, no momento, estão em transição para a área tecnológica, para se destacarem e encontrarem oportunidades no mercado de trabalho tech. 
+&nbsp;&nbsp;&nbsp;&nbsp;A solução das `</div>as` se destaca pela criação de uma comunidade interativa e colaborativa, onde mulheres em transição para a tecnologia podem compartilhar experiências e se desenvolver juntas. O chat integrado na aplicação web facilita a conexão instantânea e a troca de conhecimentos entre as participantes, promovendo um ambiente inclusivo e de apoio mútuo. Além disso, a plataforma oferece mentorias personalizadas com profissionais da TIM e trilhas técnicas especializadas, preparando as participantes, especialmente aquelas com carreiras consolidadas em outras áreas, mas que, no momento, estão em transição para a área tecnológica, para se destacarem e encontrarem oportunidades no mercado de trabalho tech. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ao focar na inclusão de mulheres mais velhas e na quebra de estereótipos etários e de gênero no setor, a solução não só combate a desigualdade, mas também promove um ambiente de trabalho ainda mais diversificado e inovador, impulsionando a mudança positiva na indústria tecnológica.
 
 <div align="center">
@@ -112,7 +112,7 @@
 
 # <a name="c5"></a>5. Tecnologias
 
-&nbsp;&nbsp;&nbsp;&nbsp;Para o desenvolvimento da aplicação web, utilizamos várias tecnologias e ferramentas essenciais. Para o frontend, empregamos HTML5, CSS3 e JavaScript, que são fundamentais para a criação da interface do usuário (UI). No backend, optamos pelo framework Sails.js, que facilita a organização do código seguindo o padrão MVC (Model-View-Controller). O banco de dados teve seu gerenciamento realizado pelo software DBeaver. Todo o sistema foi hospedado em um servidor no Render, garantindo a disponibilidade e segurança dos dados. Além disso, utilizamos Node.js como ambiente de execução para o servidor web, assegurando a eficiência e escalabilidade da aplicação. 
+&nbsp;&nbsp;&nbsp;&nbsp;Para o desenvolvimento da aplicação web, utilizamos várias tecnologias e ferramentas essenciais. Para o frontend, empregamos HTML5, CSS3 e JavaScript, que são fundamentais para a criação da interface do usuário (UI). No backend, optamos pelo framework Sails.js, que facilita a organização do código seguindo o padrão MVC (Model-View-Controller). O banco de dados teve seu gerenciamento realizado pelo software DBeaver. Todo o sistema foi hospedado em um servidor no Render, garantindo a disponibilidade e segurança dos dados. Além disso, utilizamos Node.js como ambiente de execução para o servidor web, assegurando a eficiência e escalabilidade da aplicação. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Essas tecnologias trabalham em conjunto para suportar a arquitetura MVC, onde HTML5 e CSS3 atuam na camada de visualização (View), Sails.js no controle e modelo (Controller/Model), DBeaver como interface para o banco de dados (Model), e Render como servidor (Server).
 <br>
 
@@ -121,7 +121,7 @@
 
 # <a name="c6"></a>6. Conclusões e Próximos Passos
 
-&nbsp;&nbsp;&nbsp;&nbsp; A solução `</div>as` oferece à TIM e ao mercado de tecnologia uma oportunidade única de promover a inclusão de mulheres na área tecnológica, tanto em cargos profissionais quanto de liderança. Ao proporcionar mentorias personalizadas, trilhas técnicas especializadas e um ambiente de comunidade online, capacitamos as mulheres em transição de carreira, preparando-as para desafios do mercado atual e para a consolidação de uma carreira brilhante. A adoção da nossa solução pela empresa TIM irá fortalecer sua estratégia de diversidade e inclusão, aproveitando a expertise das mentoras da empresa e promovendo um ambiente de trabalho mais diversificado e inovador. 
+&nbsp;&nbsp;&nbsp;&nbsp; A solução `</div>as` oferece à TIM e ao mercado de tecnologia uma oportunidade única de promover a inclusão de mulheres na área tecnológica, tanto em cargos profissionais quanto de liderança. Ao proporcionar mentorias personalizadas, trilhas técnicas especializadas e um ambiente de comunidade online, capacitamos as mulheres em transição de carreira, preparando-as para desafios do mercado atual e para a consolidação de uma carreira brilhante. A adoção da nossa solução pela empresa TIM irá fortalecer sua estratégia de diversidade e inclusão, aproveitando a expertise das mentoras da empresa e promovendo um ambiente de trabalho mais diversificado e inovador. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Os próximos passos envolvem a expansão e aprimoramento da plataforma para atender às crescentes demandas do mercado. Planejamos fortalecer parcerias estratégicas com outras empresas e organizações que compartilham nosso compromisso com a inclusão de mulheres na tecnologia. Além disso, estamos focados em ampliar nossa base de usuárias, oferecendo mais recursos educacionais e oportunidades de desenvolvimento profissional. Continuaremos a inovar e adaptar nossa solução para enfrentar os desafios futuros e contribuir significativamente para a transformação do setor tecnológico em um ambiente mais inclusivo e equitativo.
 &nbsp;&nbsp;&nbsp;&nbsp;Para o futuro, espera-se que a plataforma `</div>as` consiga alcançar metas estipuladas pela equipe, como: <br>
 
@@ -129,7 +129,7 @@
 2. Aumentar em 30% a taxa de colocação das participantes em posições de liderança dentro das empresas parceiras ao longo de 2 anos.
 3. Fazer com que 70% das `</div>as` da plataforma consigam uma vaga em tecnologia em menos de 3 meses após a conclusão de todas as trilhas e participação nas mentorias e workshops.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Portanto, com um compromisso firme com a diversidade e inclusão, a solução `</div>as` está pronta para fazer a diferença necessária no setor tecnológico. Uma plataforma que não apenas capacita e prepara mulheres em transição de carreira, mas também desafia os paradigmas de gênero e idade, impulsionando uma mudança positiva no futuro de todas as mulheres. Ao fortalecer parcerias estratégicas e ampliar a base de usuárias, é construído um futuro mais inclusivo e equitativo para todas. Conquiste o Futuro Tech, Hoje, com `</div>as`, onde cada mulher é inspirada a transformar sua carreira e liderar na tecnologia.
+&nbsp;&nbsp;&nbsp;&nbsp;Portanto, com um compromisso firme com a diversidade e inclusão, a solução `</div>as` está pronta para fazer a diferença necessária no setor tecnológico. Uma plataforma que não apenas capacita e prepara mulheres em transição de carreira, mas também desafia os paradigmas de gênero e idade, impulsionando uma mudança positiva no futuro de todas as mulheres. Ao fortalecer parcerias estratégicas e ampliar a base de usuárias, é construído um futuro mais inclusivo e equitativo para todas. Conquiste o Futuro Tech, Hoje, com `</div>as`, onde cada mulher é inspirada a transformar sua carreira e liderar na tecnologia.<br>
 
 
 ## Configuração para desenvolvimento e execução do código
@@ -139,6 +139,7 @@
 1. Baixar e instalar o node.js: https://nodejs.org/pt-br/ (versão 20.14.0 LTS)<br>
 2. Clone o repositório em questão.<br>
 3. No modo administrador, abra o "prompt de comando" ou o "terminal" e, após, entre no repositório clonado e digite o segundo comando:<br>
+
 ```sh
 npm install
 ```
@@ -150,6 +151,7 @@ sails lift
 ```
 4. Agora você pode acessar a aplicação através do link http://localhost:1337/
 5. O servidor está online.
+<br>
 
 
 # <a name="c7"></a>7. Referências
