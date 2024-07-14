@@ -38,8 +38,9 @@
           transition: .2s;
           cursor: pointer;
         }
+
         .background-image {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -66,7 +67,7 @@
             color: #333;
         }
 
-        .container-login input{
+        .container-login input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -74,133 +75,56 @@
             border-radius: 5px;
             box-sizing: border-box;
         }
-
-        .container-botoes {
-            text-align: center;
-            z-index: 1;
-            position: absolute;
-            margin-top: 40rem;
-        }
-
-        .container-botoes input[type="submit"] {
-            background-color: #D8ABC7;
-            color: rgb(0, 0, 0);
-            font-weight: bold;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 8px;
-            font-size: large;
-        }
-
-        .container-botoes a {
-            color: #333;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        .container-botoes a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body class="login">
     <img src="./images/Logo.svg" alt="logo" class="background-image"/>
     <div class="container-login">
-      <h1>Atualizar senha</h1>
+        <h1>Atualizar senha</h1>
 
-          <form id="verificarForm">
-            <input type="nome" id="nome" name="nome" placeholder="Nome" required>
+        <form id="verificarForm">
             <input type="email" id="email" name="email" placeholder="E-mail" required>
-            <input type="submit" class="botão-login" value="Verificar" onclick="verificar()">
-          </form>
-
-          <form id="atualizarForm" style="display: none;">
-            <input type="novaSenha" id="novaSenha" name="novaSenha" placeholder="Nova senha" required>
-            <input type="confirmacaoSenha" id="confirmacaoSenha" name="confirmacaoSenha" placeholder="Confirme a senha" required>
-            <input type="submit" class="botão-login" value="Confirmar" onclick="confirmar()">
-          </form>
+            <input type="password" id="novaSenha" name="novaSenha" placeholder="Nova senha" required>
+            <input type="submit" class="botão-login" value="Atualizar">
+        </form>
     </div>
+    <script>
+    document.getElementById('verificarForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
 
+        const verificacao = {
+          email: document.getElementById('email').value,
+          novaSenha: document.getElementById('novaSenha').value,
+        };
 
-
+        fetch('/esqueceu-senha', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(verificacao)
+        })
+        .then(response => {
+          const contentType = response.headers.get('content-type');
+          if (contentType && contentType.includes('application/json')) {
+            return response.json();
+          } else {
+            throw new Error('Resposta do servidor não é JSON');
+          }
+        })
+        .then(data => {
+          if (data.error) {
+            alert('Ocorreu um erro: ' + data.error);
+          } else {
+            alert('Senha atualizada com sucesso!');
+            location.href = '/'; // Redireciona para a página inicial após a atualização
+          }
+        })
+        .catch(error => {
+          console.error('Erro:', error);
+          alert('Ocorreu um erro durante a atualização de senha. ' + error.message);
+        });
+    });
+    </script>
 </body>
-<script>
-  function verificar() {
-    event.preventDefault();
-
-    const verificacao = {
-      nome: document.getElementById('nome').value,
-      email: document.getElementById('email').value,
-    };
-
-    fetch('/verificar', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(verificacao)
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.error) {
-        alert('An error occurred: ' + data.error);
-        location.reload();
-      } else {
-        alert('Verificação sucedida!');
-        document.getElementById('verificarForm').style.display = 'none';
-        document.getElementById('atualizarForm').style.display = 'block';
-        location.reload();
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert('Um erro ocorreu na verificação.');
-    });
-  };
-
-
-  function confirmar() {
-
-    const novaSenha = document.getElementById('novaSenha').value
-    const confirmacaoSenha = document.getElementById('confirmacaoSenha').value
-
-    if (novaSenha !== confirmacaoSenha) {
-      alert('As senhas não são iguais');
-      return;
-    }
-
-    const senhaAtualizada = {
-      email: document.getElementById('email').value,
-      novaSenha: confirmacaoSenha
-    };
-
-    fetch('/senhaAtualizada', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(senhaAtualizada)
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.error) {
-        alert('An error occurred: ' + data.error);
-        location.reload();
-      } else {
-        alert('You logged in!');
-        location.reload();
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert('An error occurred during login.');
-    });
-  };
-</script>
 </html>
-
