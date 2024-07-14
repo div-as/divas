@@ -19,19 +19,19 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/login' },
-  '/cadastro': { view: 'pages/cadastro' },
-  '/login': { view: 'pages/login' },
-  '/trilhas': { view: 'pages/trilhas' },
-  //'/perfil': 'PerfilController.mostrarPerfil',
-  '/perfil': { view: 'pages/perfil' },
+  '/': { view: 'pages/login', locals: { layout: false } },
+  '/cadastro': { view: 'pages/cadastro', locals: { layout: false } },
+  '/login': { view: 'pages/login', locals: { layout: false } },
+  '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
+  '/perfil': { view: 'pages/perfil', locals: { layout: true } },
+  '/homepage': {view: 'pages/homepage', locals: { layout: true }},
 
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
 
 
-  // Outras rotas aqui...
-  '/homepage': {view: 'pages/homepage'}
+
+
 };
 
 
