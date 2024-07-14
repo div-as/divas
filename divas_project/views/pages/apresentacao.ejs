@@ -452,7 +452,7 @@
             <div class="mensagem">
                 <h1>Conquiste o Futuro Tech hoje</h1>
                 <div class="form-container">
-                    <form action="#" method="post">
+                    <form action="/submitForm" method="post">
                         <div class="input-container">
                             <input type="text" id="nome" name="nome" placeholder="Nome:" required>
                             <label for="nome"></label>
@@ -493,6 +493,24 @@
             $('.carousel').carousel();
         });
     </script>
+    <script>
+        document.querySelector('form').addEventListener('submit', async function (event) {
+          event.preventDefault();
+          
+          const formData = new FormData(this);
+          const response = await fetch('/submitForm', {
+            method: 'POST',
+            body: formData
+          });
+      
+          if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+            this.reset();
+          } else {
+            alert('Erro ao enviar a mensagem.');
+          }
+        });
+      </script>
 
 </body>
 

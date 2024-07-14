@@ -22,20 +22,17 @@ module.exports.routes = {
   '/': { view: 'pages/login', locals: { layout: false } },
   '/cadastro': { view: 'pages/cadastro', locals: { layout: false } },
   '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
-
-  '/apresentacao': { view: 'pages/apresentacao', locals: {layout:true}},
+  '/apresentacao': { view: 'pages/apresentacao', locals: { layout: true } },
   '/homepage': 'HomepageController.mostrarHomepage',
   '/perfil': 'PerfilController.mostrarPerfil',
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
-
+  'POST /submitForm': 'ContatoController.create',
 
   // Outras rotas aqui...
-  '/dicionario': {view:'pages/dicionario'},
-  '/firewall': {view: 'pages/firewall'},
-
+  '/dicionario': { view: 'pages/dicionario' },
+  '/firewall': { view: 'pages/firewall' },
 };
-
 
   /***************************************************************************
   *                                                                          *
@@ -47,4 +44,3 @@ module.exports.routes = {
   * not match any of those, it is matched against static assets.             *
   *                                                                          *
   ***************************************************************************/
-
