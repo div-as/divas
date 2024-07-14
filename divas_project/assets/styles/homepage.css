@@ -118,7 +118,12 @@ body{
   padding: 2vh;
 
 }
-
+.card:hover {
+  background-color: #06254C;
+  color: #B1B6D3;
+  cursor: pointer;
+  transition: .2s;
+}
 .card h1 {
   font-size: 1.2vw;
   text-align: center;
