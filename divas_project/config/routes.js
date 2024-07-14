@@ -19,10 +19,16 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
- 'GET /cadastro': { view: 'pages/cadastro' },
-  'GET /login': { view: 'pages/login' },
+  '/': { view: 'pages/login' },
+  '/cadastro': { view: 'pages/cadastro' },
+  '/login': { view: 'pages/login' },
+  '/trilhas': { view: 'pages/trilhas' },
+  //'/perfil': 'PerfilController.mostrarPerfil',
+  '/perfil': { view: 'pages/perfil' },
+
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
+
 
   // Outras rotas aqui...
   '/homepage': {view: 'pages/homepage'}

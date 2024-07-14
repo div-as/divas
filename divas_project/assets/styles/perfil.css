@@ -1,0 +1,89 @@
+body{
+  background-color: #FCECCC;
+}
+
+.bgPerfil {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top:0;
+}
+
+h2 {
+  font-size: 4vh;
+  font-weight: 600;
+  position: relative;
+}
+
+li {
+  font-size: 2vh;
+}
+
+p {
+  font-size: 2vh;
+}
+
+.dados-pessoais {
+  display: flex;
+  width: 65vw;
+  flex-direction: column;
+}
+
+.info-cadastro {
+  display: flex;
+  background-color: #B1B6D3;
+  border-radius: 2vh;
+  height: 38vh;
+  margin-bottom: 4vh;
+  justify-content: flex-end;
+}
+
+.bg-info-pessoal {
+  background-color: #DCFAFF;
+  border-radius: 2vh;
+  margin: 4vh;
+  width: 65%;
+  padding-left: 2vh;
+}
+
+.baixo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.oportunidades, .info-geral {
+  background-color: #B1B6D3;
+  border-radius: 2vh;
+  height: 50vh;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2vh;
+  background-color: #DCFAFF;
+  width: 85%;
+  margin: 5vh;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  background-color: #06254C;
+  color: #B1B6D3;
+  cursor: pointer;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
