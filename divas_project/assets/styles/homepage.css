@@ -144,3 +144,11 @@ body{
   box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.2);
   margin-bottom: 10px;
 }
+
+.card button:hover {
+  font-size: 2vh;
+  background-color: #7b85bb;
+  cursor: pointer;
+  transition: .2s;
+}
+

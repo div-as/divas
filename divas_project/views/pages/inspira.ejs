@@ -15,18 +15,33 @@
 
         .inspirar {
             text-align: center;
+            width: 80vw;
         }
-
+        .bgPerfil {
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          top:0;
+          width: 60%;
+        }
+        /*
+        .bgBottom {
+          position: absolute;
+          z-index: -1;
+          bottom: 0;
+        }
+        */
         .inspirar h1 {
-            color: #000000;
-            font-size: 40px;
+            color: #6E327B;
+            font-weight: 900;
+            font-size: 7vh;
             margin: 0;
         }
 
         .intro {
             display: flex;
             align-items: flex-start;
-            margin: 5px 0;
+            margin: 2vh 0;
             border-radius: 10px;
         }
 
@@ -37,28 +52,35 @@
 
         .intro img {
             width: 200px;
-            height: 214px;
+            height: 30vh;
             border: 30px solid #73BDD8;
             border-radius: 20px;
         }
 
-        .desc {
-            height: 100%;
-            background-color: #B1B6D3;
-            border-radius: 20px;
-            color: white;
-            padding-bottom: 60px;
+        .simone, .cris {
+          object-fit: cover;
+          border-radius: 5%;
         }
 
-        .desc h1{
-            margin-bottom: 20px;
+        .desc {
+            height: 30vh;
+            background-color: #B1B6D3;
+            border-radius: 20px;
+            color: #06254C;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .desc > h1{
+            margin-bottom: 3vh;
             text-align: left;
-            color: white;
+            color: #06254C;
             padding-left: 25px;
+            font-size: 5vh;
         }
 
         .desc p {
-            color: white;
+            color: #06254C;
             text-align: left;
             padding-left: 20px;
             margin: 4px;
@@ -68,18 +90,19 @@
             background-color: #B1B6D3;
             padding: 10px;
             border-radius: 20px;
-            color: white;
-            margin-bottom: 70px;
+            color: #06254C;
+            margin-bottom: 10vh;
             text-align: left;
         }
 
         .mulheres-importantes {
             display: flex;
-            gap: 100px;
+            gap: 2vw;
+
         }
 
         .mulheres-importantes h1 {
-            color: #000000;
+            color: #06254C;
         }
 
         .mulheres-importantes .mulher1,
@@ -87,26 +110,30 @@
         .mulheres-importantes .mulher3 {
             display: flex;
             align-items: center;
-            margin: 20px 0;
+            margin: 2vw 0;
             border-radius: 10px;
             flex-direction: column;
+            object-fit: cover;
+
         }
 
 
 
         .mulheres-importantes img {
             border-radius: 20px;
-            width: 400px;
+            width: 100%;
             height: 500px;
             margin-right: 20px;
-            border: 30px solid #73BDD8;
+            background-clip: padding-box;
+          box-shadow: inset 0 0 30px #73BDD8;
         }
 
         .sobre {
             background-color: #B1B6D3;
             border-radius: 20px;
             width: 100%;
-            height: 340px;
+            height: 40vh;
+            padding-top: 2vh;
         }
 
         .sobre h2 {
@@ -121,10 +148,15 @@
             padding-right: 20px;
             text-align: left;
         }
+
+        img {
+          border-radius: 5%;
+        }
     </style>
 </head>
 
 <body>
+  <img src="images/bgPerfil.svg" class="bgPerfil">
     <div class="inspirar">
         <h1>Inspire-se em mulheres incríveis!</h1>
         <div class="intro">
@@ -132,7 +164,7 @@
                 <img src="./images/simone.jpg" alt="simone" class="simone" />
             </div>
             <div class="desc">
-                <h1>Simone Alves</h1>
+                <h1 class="name">Simone Alves</h1>
                 <p>Doutora em Administração e Engenharia Química, com especializações em Marketing, P&D de Produtos
                     Químicos e Inovação em Turismo</p>
                 <p><b>Cargo:</b> Professora no IFRJ desde 2004; Coordenadora Geral de Prospecção, Parcerias e Empreendedorismo
@@ -157,7 +189,7 @@
                 <img src="./images/cris.jpg" alt="cris" class="cris" />
             </div>
             <div class="desc">
-                <h1>Cristiane Costa</h1>
+                <h1 class="name">Cristiane Costa</h1>
                 <p>Doutora em Administração e Engenharia Química, com especializações em Marketing, P&D de Produtos
                     Químicos e Inovação em Turismo</p>
                 <p><b>Cargo:</b> CTO e co-fundadora da Gupy</p>
@@ -211,6 +243,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
