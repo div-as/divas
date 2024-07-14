@@ -13,12 +13,14 @@ module.exports.routes = {
   '/': { view: 'pages/login', locals: { layout: false } },
   '/cadastro': { view: 'pages/cadastro', locals: { layout: false } },
   '/trilhas': { view: 'pages/trilhas', locals: { layout: true } },
-  '/apresentacao': { view: 'pages/apresentacao', locals: { layout: true } },
+  '/inspira': { view: 'pages/inspira', locals: {layout:true}},
+  '/apresentacao': { view: 'pages/apresentacao', locals: {layout:true}},
   '/homepage': 'HomepageController.mostrarHomepage',
   '/perfil': 'PerfilController.mostrarPerfil',
   'POST /cadastro': 'UsuarioController.cadastro',
   'POST /login': 'UsuarioController.login',
   'POST /submitForm': 'ContatoController.create',
+
 
   // Outras rotas aqui...
   '/dicionario': { view: 'pages/dicionario' },
