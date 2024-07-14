@@ -93,7 +93,6 @@
 <div align="center">
 <sub><a name="f4"></a>Figura 4 - Diagrama dos prototipos - parte 2</sub>
 <img src="/assets/diagramapro2.png">
-<br>
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
